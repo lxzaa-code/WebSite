@@ -1,0 +1,38 @@
+.Nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1vw;
+}
+
+.Nav-Left, .Nav-Right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Nav-Right {
+    margin-right: 3vw;
+    gap: 2vw;
+}
+
+.Nav-Right .Log-In {
+    font-family: "Poppins", serif;
+    font-size: 1.5vw;
+}
+
+.Nav-Left-Title {
+    margin-left: 3vw;
+    font-size: 2vw;
+    line-height: 1.5vw;
+    font-family: 'Poppins', serif;
+    font-weight: 600;
+    color: #0071bb;
+}
+
+.Nav-Icon {
+    width: 2vw;
+    height: 2vw;
+}
+
