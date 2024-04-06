@@ -1,0 +1,35 @@
+.Main {
+    margin: 5vw 3vw 0;
+}
+
+.Main .Main-Top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Main .Main-Top #Title-1, .Main .Main-Top #Title-2, .Main .Main-Top #Title-3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 5vw;
+    line-height: 5.5vw;
+}
+
+.Main .Main-Top #Title-1 {
+    font-weight: 300;
+}
+
+.Main .Main-Top #Title-2 {
+    color: rebeccapurple;
+    font-weight: 500;
+}
+
+.Main .Main-Top #Title-3 {
+    font-weight: 700;
+}
+
+.Main .Main-Top #Subtitle {
+    font-family: "Poppins", sans-serif;
+    font-size: 2vw;
+    font-weight: 300;
+    color: #777;
+}

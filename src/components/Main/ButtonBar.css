@@ -1,0 +1,43 @@
+.Button-Bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2vw;
+    margin-top: 2vw;
+}
+
+.Button-Bar div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw 2vw;
+    border-radius: 1.75vw;
+}
+
+.Button-Bar #Start-Button {
+    background: rebeccapurple;
+    color: white;
+    height: 1.5vw;
+    font-size: 1.8vw;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+}
+
+.Button-Bar #Start-Button:hover {
+    background: #7744aa;
+}
+
+.Button-Bar #Discussion-Button{
+    color: rebeccapurple;
+    border: 1px solid rebeccapurple;
+    height: 1.5vw;
+    font-size: 1.6vw;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    gap: 0.5vw;
+}
+
+.Button-Bar #Discussion-Button:hover {
+    background: #eeeeee;
+}

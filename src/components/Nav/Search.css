@@ -2,27 +2,37 @@
     margin-left: 5vw;
     height: 3vw;
     border-radius: 1.5vw;
-    border: 1px solid #444;
+    border: 2px solid #777;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
+.Search:hover{
+    border: 2px solid #000;
+}
+
 #search{
     margin-left: 2vw;
-    padding-right: 1vw;
-    border: none!important;
+    border: none !important;
     width: 30vw;
-    outline: none!important;
+    outline: none !important;
     border-radius: 1.5vw;
     font-family: "Poppins", serif;
+    line-height: 1.5vw;
     font-size: 1.5vw;
+    font-weight: 300;
     overflow: hidden;
 }
 
 
 .Search-button{
+    margin-right: .2vw;
+    padding: .3vw;
     width: 2vw !important;
-    height: 2vw!important;
+    height: 2vw !important;
+    border-radius: 50%;
+    background-color: #444 !important;
+    color: white;
 }
