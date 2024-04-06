@@ -1,5 +1,6 @@
 import './Main.css'
 import ButtonBar from "./Main/ButtonBar";
+import MainContent from "./Main/MainContent";
 
 function Main(){
     return(
@@ -11,6 +12,7 @@ function Main(){
                 <p id="Subtitle">Standard, Original and Dedicated</p>
                 <ButtonBar/>
             </div>
+            <MainContent/>
         </div>
     )
 }

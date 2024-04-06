@@ -3,10 +3,10 @@
     flex-direction: row;
     align-items: center;
     gap: 2vw;
-    margin-top: 2vw;
+    margin: 2vw 0;
 }
 
-.Button-Bar div{
+.Button-Bar div {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -28,7 +28,7 @@
     background: #7744aa;
 }
 
-.Button-Bar #Discussion-Button{
+.Button-Bar #Discussion-Button {
     color: rebeccapurple;
     border: 1px solid rebeccapurple;
     height: 1.5vw;

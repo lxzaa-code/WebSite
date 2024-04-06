@@ -9,11 +9,11 @@
     align-items: center;
 }
 
-.Search:hover{
+.Search:hover {
     border: 2px solid #000;
 }
 
-#search{
+#search {
     margin-left: 2vw;
     border: none !important;
     width: 30vw;
@@ -27,7 +27,7 @@
 }
 
 
-.Search-button{
+.Search-button {
     margin-right: .2vw;
     padding: .3vw;
     width: 2vw !important;
@@ -35,4 +35,9 @@
     border-radius: 50%;
     background-color: #444 !important;
     color: white;
+    transition: background-color .5s;
+}
+
+.Search-button:hover {
+    background-color: #000 !important;
 }
