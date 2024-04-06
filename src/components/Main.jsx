@@ -3,6 +3,7 @@ import ButtonBar from "./Main/ButtonBar";
 import MainContent from "./Main/MainContent";
 
 function Main(){
+    document.title = "Main Page | Mdr-C-Tutorial";
     return(
         <div className="Main">
             <div className="Main-Top">

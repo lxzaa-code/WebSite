@@ -33,7 +33,7 @@
     width: 2vw !important;
     height: 2vw !important;
     border-radius: 50%;
-    background-color: #444 !important;
+    background-color: rebeccapurple !important;
     color: white;
     transition: background-color .5s;
 }

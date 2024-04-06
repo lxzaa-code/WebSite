@@ -1,0 +1,12 @@
+.Discussion{
+    margin: 1vw 3vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.Discussion .Discussion-Bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}

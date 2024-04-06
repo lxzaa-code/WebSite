@@ -5,7 +5,7 @@ import Main from "./components/Main";
 function App() {
   return (
     <div className="App">
-        <Nav/>
+        <Nav user={{"name":"mdr"}}/>
         <Main/>
     </div>
   );

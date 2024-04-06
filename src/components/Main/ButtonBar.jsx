@@ -7,7 +7,11 @@ function ButtonBar() {
             <div id="Start-Button">
                 Start
             </div>
-            <div id="Discussion-Button">
+            <div id="Discussion-Button"
+                 onClick={function () {
+                     window.location.href = "/Discussion"
+                 }}
+            >
                 Discussion
                 <FaArrowRight/>
             </div>

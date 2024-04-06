@@ -17,9 +17,13 @@
     gap: 2vw;
 }
 
-.Nav-Right .Log-In {
+.Nav-Right .Log-In, .Nav-Right .Logged-In {
     font-family: "Poppins", serif;
     font-size: 1.5vw;
+}
+
+.Nav-Right .Logged-In {
+    color: rebeccapurple;
 }
 
 .Nav-Left-Title {
