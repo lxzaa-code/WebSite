@@ -1,9 +1,12 @@
 import './MainContent.css'
+import Playground from "./MainContent/Playground";
+import Group from "./MainContent/Group";
 
 function MainContent() {
     return(
         <div className="MainContent">
-            <p>123</p>
+            <Playground/>
+            <Group/>
         </div>
     )
 }

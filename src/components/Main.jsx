@@ -1,6 +1,7 @@
 import './Main.css'
 import ButtonBar from "./Main/ButtonBar";
 import MainContent from "./Main/MainContent";
+import Footer from "./Main/Footer";
 
 function Main(){
     document.title = "Main Page | Mdr-C-Tutorial";
@@ -14,6 +15,7 @@ function Main(){
                 <ButtonBar/>
             </div>
             <MainContent/>
+            <Footer/>
         </div>
     )
 }
