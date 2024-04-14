@@ -7,11 +7,11 @@ function Playground() {
         <div className="Playground">
             <div className="Left">
                 <h1>Playground</h1>
-                <div>
+                <div style={{marginLeft: ".5vw"}}>
                     <p>To Run Your Code</p>
                     <p>In Any Time</p>
                 </div>
-                <h2>ps: Only C Supported</h2>
+                <h2 style={{marginLeft: ".5vw"}}>ps: Only C Supported</h2>
                 <button>Go!<FaArrowRight/></button>
             </div>
             <div className="Right">

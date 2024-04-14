@@ -1,5 +1,6 @@
 import './Group.css'
 import GroupLeft from "./GroupLeft";
+import {FaArrowLeft} from "react-icons/fa";
 
 function Group() {
     return (
@@ -9,13 +10,14 @@ function Group() {
             </div>
             <div className="Right">
                 <h1>Group</h1>
-                <div style={{marginLeft: "1vw"}}>
+                <div style={{marginLeft: ".5vw"}}>
                     <p>Share your Idea</p>
-                    <p>&&</p>
+                    <h2>&&</h2>
                     <p>Ask Questions</p>
-                    <p>&&</p>
+                    <h2>&&</h2>
                     <p>PDF Books</p>
                 </div>
+                <button><FaArrowLeft/>Join!</button>
             </div>
         </div>
     )

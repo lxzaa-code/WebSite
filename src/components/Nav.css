@@ -17,9 +17,47 @@
     gap: 2vw;
 }
 
-.Nav-Right .Log-In, .Nav-Right .Logged-In {
+.Nav-Right .Log-In, .Nav-Right .Logged-In, .Nav-Right .Website p {
+    display: inline;
     font-family: "Poppins", serif;
     font-size: 1.5vw;
+}
+
+.Nav-Right .Website{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Nav-Right .Website .WebsiteListContainer {
+    position: relative;
+}
+
+.Nav-Right .Website .WebsiteList {
+    position: absolute;
+    width: 20vw;
+    top: 1.3vw;
+    left: -7vw;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.8s;
+    display: flex;
+    flex-direction: column;
+}
+
+.Nav-Right .Website:hover .WebsiteList {
+    height: 20vw;
+}
+
+.Nav-Right .Website .WebsiteList a {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2vw;
+    transition: color 0.3s;
+}
+
+.Nav-Right .Website .WebsiteList a:hover {
+    color: rebeccapurple;
 }
 
 .Nav-Right .Logged-In {

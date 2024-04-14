@@ -4,14 +4,16 @@ import {FaArrowRight} from "react-icons/fa";
 function ButtonBar() {
     return (
         <div className="Button-Bar">
-            <div id="Start-Button">
+            <div id="Start-Button"
+                 onClick={() => {
+                     window.location.href = "/tutorial"
+                 }}>
                 Start
             </div>
             <div id="Discussion-Button"
-                 onClick={function () {
-                     window.location.href = "/Discussion"
-                 }}
-            >
+                 onClick={() => {
+                     window.location.href = "/discussion"
+                 }}>
                 Discussion
                 <FaArrowRight/>
             </div>
