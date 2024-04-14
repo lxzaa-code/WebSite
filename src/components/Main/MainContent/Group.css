@@ -1,0 +1,32 @@
+.Group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2vw 3vw;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Group .Left{
+    margin-left: 8vw;
+}
+
+.Group .Right {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding-left: 10vw;
+}
+
+.Group .Right h1 {
+    font-size: 3vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: rebeccapurple;
+}
+
+.Group .Right p {
+    font-size: 1.3vw;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}

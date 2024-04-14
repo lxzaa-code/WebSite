@@ -1,0 +1,7 @@
+.PlaygroundRight {
+    height: 27vw;
+    width: 48vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+}
