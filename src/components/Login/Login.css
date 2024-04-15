@@ -1,13 +1,12 @@
-.Log-In-Page{
+.Log-In-Page {
     margin: 1vw 3vw;
     display: flex;
     flex-direction: column;
 }
 
-.Log-In-Page .Log-In-Bar{
+.Log-In-Page .Log-In-Bar {
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: center;
 }
-

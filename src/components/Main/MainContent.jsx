@@ -3,10 +3,10 @@ import Playground from "./MainContent/Playground";
 import Group from "./MainContent/Group";
 
 function MainContent() {
-    return(
+    return (
         <div className="MainContent">
-            <Playground/>
-            <Group/>
+            <Playground />
+            <Group />
         </div>
     )
 }

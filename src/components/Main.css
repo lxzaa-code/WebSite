@@ -10,7 +10,9 @@
     padding-top: 3vw;
 }
 
-.Main .Main-Top #Title-1, .Main .Main-Top #Title-2, .Main .Main-Top #Title-3 {
+.Main .Main-Top #Title-1,
+.Main .Main-Top #Title-2,
+.Main .Main-Top #Title-3 {
     font-family: "Poppins", sans-serif;
     font-size: 5vw;
     line-height: 5.5vw;

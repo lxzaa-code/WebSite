@@ -6,7 +6,8 @@
     margin-top: 1vw;
 }
 
-.Nav-Left, .Nav-Right {
+.Nav-Left,
+.Nav-Right {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -17,13 +18,15 @@
     gap: 2vw;
 }
 
-.Nav-Right .Log-In, .Nav-Right .Logged-In, .Nav-Right .Website p {
+.Nav-Right .Log-In,
+.Nav-Right .Logged-In,
+.Nav-Right .Website p {
     display: inline;
     font-family: "Poppins", serif;
     font-size: 1.5vw;
 }
 
-.Nav-Right .Website{
+.Nav-Right .Website {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -76,4 +79,3 @@
     width: 2vw;
     height: 2vw;
 }
-

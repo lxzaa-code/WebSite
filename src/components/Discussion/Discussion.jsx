@@ -1,12 +1,12 @@
 import './Discussion.css';
 import ReturnMainPage from "../mess/ReturnMainPage";
 
-function Discussion(){
+function Discussion() {
     document.title = "Discussion | Mdr-C-Tutorial";
     return (
         <div className="Discussion">
             <div className="Discussion-Bar">
-                <ReturnMainPage/>
+                <ReturnMainPage />
             </div>
         </div>
     )

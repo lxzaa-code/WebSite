@@ -5,8 +5,8 @@ import Main from "./components/Main";
 function App() {
   return (
     <div className="App">
-        <Nav user={{"name":"mdr"}}/>
-        <Main/>
+      <Nav user={{ "name": "mdr" }} />
+      <Main />
     </div>
   );
 }

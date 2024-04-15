@@ -7,8 +7,8 @@ function Footer() {
         <div className="Footer">
             <p>More Activities will come soon</p>
             <div className="FooterBottom">
-                <FooterCopy/>
-                <FooterOthers/>
+                <FooterCopy />
+                <FooterOthers />
             </div>
         </div>
     )
