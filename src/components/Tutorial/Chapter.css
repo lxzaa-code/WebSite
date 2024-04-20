@@ -1,0 +1,26 @@
+.Chapter01,
+.Chapter02,
+.Chapter03,
+.Chapter04,
+.Chapter05,
+.Chapter06,
+.Chapter07,
+.Chapter08,
+.Chapter09,
+.Chapter10 {
+    display: flex;
+    flex-direction: column;
+}
+
+.Chapter h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 2.5vw;
+    color: rebeccapurple;
+}
+
+.Chapter h1 span {
+    font-family: "Microsoft YaHei", sans-serif;
+    font-size: 2vw;
+    color: black;
+}

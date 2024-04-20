@@ -24,14 +24,14 @@ function Nav({ user }) {
                     <FaChevronDown />
                     <div className="WebsiteListContainer">
                         <div className="WebsiteList">
-                            <a href="https://github.com">Github</a>
+                            <a rel="noreferrer" target={"_blank"} href="https://github.com">Github</a>
                             <a rel="noreferrer" target={"_blank"} href="https://godbolt.org">Compiler Explorer</a>
                             <a rel="noreferrer" target={"_blank"} href="https://zh.cppreference.com">Cpp Reference</a>
                             <a rel="noreferrer" target={"_blank"} href="https://stackoverflow.com">Stack Overflow</a>
                         </div>
                     </div>
                 </div>
-                <a href="/">
+                <a href="/handout">
                     <FaMarkdown className="Nav-Icon Icon-Link" />
                 </a>
                 <a href="https://github.com/Mdr-C-Tutorial/C">

@@ -1,0 +1,59 @@
+.Tutorial {
+    margin: 1vw 3vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.Tutorial .Tutorial-Bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.Tutorial .Tutorial-Title {
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Tutorial .Tutorial-Title h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 3vw;
+    font-weight: 300;
+}
+
+.Tutorial .Tutorial-Title h1 span {
+    font-size: 5vw;
+    font-weight: 400;
+    color: rebeccapurple;
+}
+
+.Tutorial .Tutorial-Title .Process {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2vw;
+}
+
+.Tutorial .Tutorial-Title .Process .Chapter-Finished, .Tutorial .Tutorial-Title .Process .Chapter-Current, .Tutorial .Tutorial-Title .Process .Chapter-Future {
+    height: .3vw;
+    width: 8vw;
+}
+
+.Tutorial .Tutorial-Title .Process .Chapter-Finished {
+    background-color: #000;
+}
+
+
+.Tutorial .Tutorial-Title .Process .Chapter-Current {
+    background-color: rebeccapurple;
+}
+
+.Tutorial .Tutorial-Title .Process .Chapter-Future {
+    background-color: #8f8f8f;
+}
