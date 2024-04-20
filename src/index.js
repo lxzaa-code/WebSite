@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from "./components/Login/Login";
 import Discussion from "./components/Discussion/Discussion";
 import Mdr from "./components/Mdr/Mdr";
@@ -19,16 +19,16 @@ root.render(
     <React.StrictMode>
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<App/>}/>
-                <Route path="/login" element={<Login/>}/>
-                <Route path="/discussion" element={<Discussion/>}/>
-                <Route path="/mdr" element={<Mdr/>}/>
-                <Route path="/story" element={<Story/>}/>
-                <Route path="/tech" element={<TechStack/>}/>
-                <Route path="/tutorial" element={<Tutorial/>}/>
-                <Route path="/credits" element={<Credits/>}/>
-                <Route path="/feedback" element={<FeedBack/>}/>
-                <Route path="/about" element={<About/>}/>
+                <Route path="/" element={<App />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/discussion" element={<Discussion />} />
+                <Route path="/mdr" element={<Mdr />} />
+                <Route path="/story" element={<Story />} />
+                <Route path="/tech" element={<TechStack />} />
+                <Route path="/tutorial" element={<Tutorial />} />
+                <Route path="/credits" element={<Credits />} />
+                <Route path="/feedback" element={<FeedBack />} />
+                <Route path="/about" element={<About />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>

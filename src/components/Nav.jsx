@@ -1,15 +1,15 @@
 import './Nav.css';
-import {FaChevronDown, FaGithub, FaMarkdown, FaRegFileCode} from "react-icons/fa";
+import { FaChevronDown, FaGithub, FaMarkdown, FaRegFileCode } from "react-icons/fa";
 import Search from "./Nav/Search";
 
-function Nav({user}) {
+function Nav({ user }) {
     return (
         <div className="Nav">
             <div className="Nav-Left">
                 <p className="Nav-Left-Title">
                     Mdr-C-Tutorial
                 </p>
-                <Search/>
+                <Search />
             </div>
             <div className="Nav-Right">
                 {
@@ -21,7 +21,7 @@ function Nav({user}) {
                 <div className="Website">
                     <p>Website</p>
                     &nbsp;
-                    <FaChevronDown/>
+                    <FaChevronDown />
                     <div className="WebsiteListContainer">
                         <div className="WebsiteList">
                             <a href="https://github.com">Github</a>
@@ -32,13 +32,13 @@ function Nav({user}) {
                     </div>
                 </div>
                 <a href="/">
-                    <FaMarkdown className="Nav-Icon Icon-Link"/>
+                    <FaMarkdown className="Nav-Icon Icon-Link" />
                 </a>
                 <a href="https://github.com/Mdr-C-Tutorial/C">
-                    <FaGithub className="Nav-Icon Icon-Link"/>
+                    <FaGithub className="Nav-Icon Icon-Link" />
                 </a>
                 <a href="https://github.com/Mdr-C-Tutorial/Website">
-                    <FaRegFileCode className="Nav-Icon Icon-Link"/>
+                    <FaRegFileCode className="Nav-Icon Icon-Link" />
                 </a>
             </div>
         </div>
