@@ -25,7 +25,7 @@ function Chapter({number}) {
     let arr = [<Chapter01/>, <Chapter02/>, <Chapter03/>, <Chapter04/>, <Chapter05/>, <Chapter06/>, <Chapter07/>,
         <Chapter08/>, <Chapter09/>, <Chapter10/>];
     if (number >= 0 && number < 10) {
-        return arr[number-1];
+        return arr[number - 1];
     } else return <div>error</div>;
 }
 
@@ -40,9 +40,7 @@ function Tutorial() {
     document.title = 'Guided-Tutorial | Mdr-C-Tutorial';
     return (
         <div className="Tutorial">
-            <div className="Tutorial-Bar">
-                <ReturnMainPage/>
-            </div>
+            <ReturnMainPage/>
             <div className="Tutorial-Title">
                 <h1>Mdr-C- <span>Guided</span> -Tutorial</h1>
                 <TutorialButtonBar/>

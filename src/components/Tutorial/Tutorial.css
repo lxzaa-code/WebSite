@@ -4,13 +4,6 @@
     flex-direction: column;
 }
 
-.Tutorial .Tutorial-Bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-}
-
 .Tutorial .Tutorial-Title {
     margin-top: 3vw;
     margin-bottom: 2vw;

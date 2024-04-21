@@ -1,4 +1,10 @@
 .Return-Main-Page {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+.Return-Main-Page .RMPButton {
     height: 2vw;
     padding: .5vw 2vw;
     border: 1px solid rebeccapurple;
@@ -16,7 +22,7 @@
     transition: all .3s;
 }
 
-.Return-Main-Page:hover {
+.Return-Main-Page .RMPButton:hover {
     background-color: rebeccapurple;
     color: white;
 }

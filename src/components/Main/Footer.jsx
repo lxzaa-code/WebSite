@@ -5,10 +5,12 @@ import FooterOthers from "./Footer/FooterOthers";
 function Footer() {
     return (
         <div className="Footer">
-            <p>More Activities will come soon</p>
+            <p>More Activities will come <span
+                style={{color: "rebeccapurple !important", fontWeight: 500, fontSize: "3vw"}}>soon</span>
+            </p>
             <div className="FooterBottom">
-                <FooterCopy />
-                <FooterOthers />
+                <FooterCopy/>
+                <FooterOthers/>
             </div>
         </div>
     )
