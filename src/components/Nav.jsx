@@ -13,15 +13,12 @@ function Nav({ user }) {
             </div>
             <div className="Nav-Right">
                 {
-                    user ? <p className="Logged-In">{user.name}</p> :
+                    user ? <p className="Logged-In">{user}</p> :
                         <p className="Log-In" onClick={function () {
                             window.location.href = "/login"
                         }}>Log in</p>
                 }
                 <div className="Website">
-                    <p>Website</p>
-                    &nbsp;
-                    <FaChevronDown />
                     <div className="WebsiteListContainer">
                         <div className="WebsiteList">
                             <a rel="noreferrer" target={"_blank"} href="https://github.com">Github</a>
@@ -30,9 +27,12 @@ function Nav({ user }) {
                             <a rel="noreferrer" target={"_blank"} href="https://stackoverflow.com">Stack Overflow</a>
                         </div>
                     </div>
+                    <p>Website</p>
+                    &nbsp;
+                    <FaChevronDown id="ChevronDown" />
                 </div>
                 <a href="/handout">
-                    <FaMarkdown className="Nav-Icon Icon-Link" />
+                    <FaMarkdown className="Nav-Icon Icon-Link"/>
                 </a>
                 <a href="https://github.com/Mdr-C-Tutorial/C">
                     <FaGithub className="Nav-Icon Icon-Link" />

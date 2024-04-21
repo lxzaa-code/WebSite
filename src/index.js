@@ -15,6 +15,7 @@ import Credits from "./components/Credits/Credits";
 import FeedBack from "./components/FeedBack/FeedBack";
 import About from "./components/About/About";
 import Handout from "./components/Handout/Handout";
+import Search from "./components/Nav/Search";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -32,6 +33,7 @@ root.render(
                 <Route path="/feedback" element={<FeedBack/>}/>
                 <Route path="/about" element={<About/>}/>
                 <Route path="/handout" element={<Handout/>}/>
+                <Route path="/search" element={<Search/>}/>
             </Routes>
         </BrowserRouter>
     </React.StrictMode>

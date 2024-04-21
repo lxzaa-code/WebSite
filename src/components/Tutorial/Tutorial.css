@@ -37,12 +37,12 @@
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 2vw;
+    margin-top: 4vw;
 }
 
 .Tutorial .Tutorial-Title .Process .Chapter-Finished, .Tutorial .Tutorial-Title .Process .Chapter-Current, .Tutorial .Tutorial-Title .Process .Chapter-Future {
     height: .3vw;
-    width: 8vw;
+    width: 9vw;
 }
 
 .Tutorial .Tutorial-Title .Process .Chapter-Finished {
