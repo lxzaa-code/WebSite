@@ -1,6 +1,7 @@
 import './Nav.css';
 import { FaChevronDown, FaGithub, FaMarkdown, FaRegFileCode } from "react-icons/fa";
 import Search from "./Nav/Search";
+import {Link} from "react-router-dom";
 
 function Nav({ user }) {
     return (
@@ -21,25 +22,25 @@ function Nav({ user }) {
                 <div className="Website">
                     <div className="WebsiteListContainer">
                         <div className="WebsiteList">
-                            <a rel="noreferrer" target={"_blank"} href="https://github.com">Github</a>
-                            <a rel="noreferrer" target={"_blank"} href="https://godbolt.org">Compiler Explorer</a>
-                            <a rel="noreferrer" target={"_blank"} href="https://zh.cppreference.com">Cpp Reference</a>
-                            <a rel="noreferrer" target={"_blank"} href="https://stackoverflow.com">Stack Overflow</a>
+                            <Link rel="noreferrer" target={"_blank"} to="https://github.com">Github</Link>
+                            <Link rel="noreferrer" target={"_blank"} to="https://godbolt.org">Compiler Explorer</Link>
+                            <Link rel="noreferrer" target={"_blank"} to="https://zh.cppreference.com">Cpp Reference</Link>
+                            <Link rel="noreferrer" target={"_blank"} to="https://stackoverflow.com">Stack Overflow</Link>
                         </div>
                     </div>
                     <p>Website</p>
                     &nbsp;
                     <FaChevronDown id="ChevronDown" />
                 </div>
-                <a href="/handout">
+                <Link to="/handout">
                     <FaMarkdown className="Nav-Icon Icon-Link"/>
-                </a>
-                <a href="https://github.com/Mdr-C-Tutorial/C">
+                </Link>
+                <Link to="https://github.com/Mdr-C-Tutorial/C">
                     <FaGithub className="Nav-Icon Icon-Link" />
-                </a>
-                <a href="https://github.com/Mdr-C-Tutorial/Website">
+                </Link>
+                <Link to="https://github.com/Mdr-C-Tutorial/Website">
                     <FaRegFileCode className="Nav-Icon Icon-Link" />
-                </a>
+                </Link>
             </div>
         </div>
     )

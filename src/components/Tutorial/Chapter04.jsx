@@ -2,7 +2,7 @@ import './Chapter.css';
 
 function Chapter04(){
     return(
-        <div className="Chapter04">
+        <div className="Chapter">
             <p>4/10</p>
         </div>
     )
