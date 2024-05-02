@@ -1,6 +1,9 @@
 import './Chapter.css';
 import {FaClock} from "react-icons/fa6";
 import {GiPositionMarker} from "react-icons/gi";
+import {Link} from "react-router-dom";
+import {FaArrowRight} from "react-icons/fa";
+import {parseSentence} from "../mess/markdownparser";
 
 function Chapter01() {
 
@@ -34,9 +37,7 @@ function Chapter01() {
                     <div className="Latest-Update"><FaClock/> <h6>最近更新 2024-05-02 | Mdr</h6></div>
                     <p>在这个章节中，我们将初步认识C语言，了解它的历史和发展。</p>
                     <h2 id="hello-world-01">历史</h2>
-                    <p>C语言于1972年由 <strong>贝尔实验室</strong> 的 <i>Dennie Ritch</i> 和 <i>Ken
-                        Thompson</i> 在开发 <strong>UNIX</strong> 操作系统时研制。
-                    </p>
+                    <p dangerouslySetInnerHTML={{__html: parseSentence("C语言于1972年由 **贝尔实验室** 的 *Dennie Ritch* 和 *Ken Thompson* 在开发 **UNIX** 操作系统时研制。")}}></p>
                     <h2 id="hello-world-02">语言标准</h2>
                     <p>1</p>
                     <p>1</p>
@@ -92,14 +93,14 @@ function Chapter01() {
                     <p>1</p>
                     <p>1</p>
                     <p id="aaaa">1</p>
-                </div>
-            </div>
-            <div className="Chapter-Bottom">
-                <div className="Chapter-Bottom-Left">
+                    <div className="Chapter-Bottom">
+                        <div className="Chapter-Bottom-Left">
 
-                </div>
-                <div className="Chapter-Bottom-Right">
-
+                        </div>
+                        <div className="Chapter-Bottom-Right">
+                            <Link to="/tutorial/01/1">下一页<FaArrowRight/></Link>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     margin-top: 2vw;
-    position: sticky;
     top: 0;
 }
 
@@ -16,20 +15,22 @@
     flex-direction: row;
     justify-content: left;
     margin-top: 2vw;
-    overflow: scroll;
-    position: sticky;
     top: 0;
 }
 
 .Chapter .Chapter-Main .Chapter-Left {
-    position: sticky;
-    top: 0;
+    position: fixed;
+    top: 12vw;
     width: 20vw;
 }
 
 .Chapter .Chapter-Main .Chapter-Right {
     display: flex;
     flex-direction: column;
+    margin-left: 16vw;
+    border-left: 1px solid #999;
+    padding-left: 2vw;
+    width: 76vw;
 }
 
 .Chapter .Chapter-Right .Current-Position, .Chapter .Chapter-Right .Latest-Update {
@@ -70,7 +71,7 @@
 }
 
 .Chapter .Chapter-Left > p:hover {
-    color: blueviolet;
+    color: #a950ff;
 }
 
 .Chapter h2 {
@@ -90,7 +91,7 @@
 }
 
 .Chapter .Chapter-Bottom {
-
+    margin-top: 1vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -104,4 +105,74 @@
 .Chapter .Chapter-Bottom .Chapter-Bottom-Right {
     flex-direction: row;
     justify-content: right;
+}
+
+.Chapter .Chapter-Bottom a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw 2vw;
+    border-radius: 1.75vw;
+    background: white;
+    border: 1px solid rebeccapurple;
+    color: rebeccapurple;
+    height: 1.5vw;
+    font-size: 1.6vw;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    gap: 0.5vw;
+    transition: all 0.3s;
+}
+
+.Chapter .Chapter-Bottom a:hover {
+    background: rebeccapurple;
+    color: white;
+}
+
+.Chapter .Code {
+    margin: .5vw 0;
+    padding: .8vw .5vw;
+    background: #f7f7f7;
+    font-size: 1vw;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.Chapter .Code .Code-Line {
+    display: flex;
+    flex-direction: row;
+}
+
+.Chapter .Code .Code-Line-Number-Wrapper{
+    display: flex;
+    justify-content: right;
+    width: 2vw;
+    margin-right: 1vw;
+}
+
+.Chapter .Code .Code-Line-Number-Wrapper .Code-Line-Number {
+    font-weight: 200;
+    color: rebeccapurple;
+}
+
+.Chapter .Code pre{
+    font-size: 1vw;
+    font-family: 'JetBrains Mono', monospace;
+
+}
+
+.Chapter .Code pre>span.Processor{
+    color: #888200;
+}
+
+.Chapter .Code pre>span.String{
+    color: green;
+}
+
+.Chapter .Code pre>span.KeyWord{
+    color: #83068f;
+}
+
+.Chapter .Code pre>span.Function{
+    color: #075cb9;
 }
