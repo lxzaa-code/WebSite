@@ -30,7 +30,17 @@ import {Link} from "react-router-dom";
 //     } else return <div>error</div>;
 // }
 
+export function scrollToAnchor(anchorName){
+    if (anchorName) {
+        // 找到锚点
+        let anchorElement = document.getElementById(anchorName);
+        // 如果对应id的锚点存在，就跳转到锚点
+        if(anchorElement) { anchorElement.scrollIntoView({block: 'start', behavior: 'smooth'}); }
+    }
+}
+
 function Tutorial() {
+
     // let process;
     // if (localStorage.getItem("Mdr-C-Guided-Tutorial") === undefined) {
     //     localStorage.setItem("Mdr-C-Guided-Tutorial", "1");
@@ -62,7 +72,7 @@ function Tutorial() {
             <div className="Tutorial-Main">
                 <div className="Tutorial-Main-Content">
                     <div className="Tutorial-Item">
-                        <Link to="/tutorial/01">Hello world</Link>
+                        <Link to="/tutorial/01/0">Hello world</Link>
                     </div>
                 </div>
                 <div className="Tutorial-Main-Article">

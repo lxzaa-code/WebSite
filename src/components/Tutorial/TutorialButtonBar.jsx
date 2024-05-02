@@ -6,7 +6,7 @@ function TutorialButtonBar() {
         <div className="Tutorial-Button-Bar">
             <div id="Handout-Button"
                  onClick={() => {
-                     window.location.href = "/handout"
+                     window.location.href = "https://hfsz2313.github.io/C/#/"
                  }}>
                 <FaArrowLeft/>
                 Handout

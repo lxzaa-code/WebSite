@@ -32,7 +32,7 @@ function Nav({ user }) {
                     &nbsp;
                     <FaChevronDown id="ChevronDown" />
                 </div>
-                <Link to="/handout">
+                <Link to="https://hfsz2313.github.io/C/#/">
                     <FaMarkdown className="Nav-Icon Icon-Link"/>
                 </Link>
                 <Link to="https://github.com/Mdr-C-Tutorial/C">
