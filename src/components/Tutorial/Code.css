@@ -1,0 +1,39 @@
+.Code .CodeInfo {
+    background-color: #eee;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8vw 0;
+}
+
+.Code .CodeInfo .CodeInfo-Left {
+    font-size: 1vw;
+    font-family: "Nirmala UI", sans-serif;
+    font-weight: 300;
+    color: #333;
+    margin-left: 1.5vw;
+}
+
+.Code .CodeInfo .CodeInfo-Right button {
+    border: none;
+    margin-right: 1vw;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: .3vw;
+    align-items: center;
+}
+
+.Code .CodeInfo .CodeInfo-Right button:hover {
+    color: rebeccapurple;
+}
+
+.Code .CodeContent {
+    padding: .5vw;
+}
+
+.Code .CodeContent .Code-Line > div > pre,
+.Code .CodeContent .Code-Line > div > pre span {
+    font-family: "JetBrains Mono", monospace !important;
+}

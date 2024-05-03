@@ -1,15 +1,16 @@
 import './Code.css'
+import hljs from "../mess/myHighlight";
+import {setClipboard} from "../mess/setClipBoard";
+import {FaCopy} from "react-icons/fa";
 
 function my_split({code, s}) {
     let arr = [];
-    console.log(code);
     code['str'].toString().split(s).forEach(line => {
         arr.push(line);
     });
     for (let i = 0; i < arr.length; i++) {
         arr[i] = {id: i, content: arr[i]};
     }
-    console.log(arr);
     return arr;
 }
 
@@ -22,16 +23,33 @@ function Code({code}) {
             <div className="Code-Line-Number">
                 {item.id}</div>
         </div>
-        <div><pre>{item.content}</pre></div>
+        <div>
+            <pre dangerouslySetInnerHTML={{__html:hljs.highlight(item.content, {language: "c"}).value}}></pre>
+        </div>
     </div>)
     console.log(lines);
     return (
         <div className="Code">
-            {lines.map((line) => (
-                <div>
-                    {line}
+            <div className="CodeInfo">
+                <div className="CodeInfo-Left">C</div>
+                <div className="CodeInfo-Right">
+                    <button onClick={() => {
+                        setClipboard(code.str)
+                    }}>
+                        <FaCopy/>
+                        Copy
+                    </button>
                 </div>
-            ))}
+
+            </div>
+            <hr/>
+            <div className="CodeContent">
+                {lines.map((line) => (
+                    <div>
+                        {line}
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }

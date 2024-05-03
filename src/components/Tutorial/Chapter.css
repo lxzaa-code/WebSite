@@ -132,7 +132,6 @@
 
 .Chapter .Code {
     margin: .5vw 0;
-    padding: .8vw .5vw;
     background: #f7f7f7;
     font-size: 1vw;
     font-family: 'JetBrains Mono', monospace;
@@ -153,26 +152,4 @@
 .Chapter .Code .Code-Line-Number-Wrapper .Code-Line-Number {
     font-weight: 200;
     color: rebeccapurple;
-}
-
-.Chapter .Code pre{
-    font-size: 1vw;
-    font-family: 'JetBrains Mono', monospace;
-
-}
-
-.Chapter .Code pre>span.Processor{
-    color: #888200;
-}
-
-.Chapter .Code pre>span.String{
-    color: green;
-}
-
-.Chapter .Code pre>span.KeyWord{
-    color: #83068f;
-}
-
-.Chapter .Code pre>span.Function{
-    color: #075cb9;
 }
