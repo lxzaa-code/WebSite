@@ -15,14 +15,45 @@
     margin-left: 1.5vw;
 }
 
+.Code .CodeInfo .CodeInfo-Right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .Code .CodeInfo .CodeInfo-Right button {
     border: none;
     margin-right: 1vw;
     font-family: "Poppins", sans-serif;
+    font-size: .95vw;
     display: flex;
     flex-direction: row;
     gap: .3vw;
     align-items: center;
+}
+
+.Code .CodeInfo .CodeInfo-Right button .Button-Run,
+.Code .CodeInfo .CodeInfo-Right button .Button-Stop {
+    display: flex;
+    flex-direction: row;
+    gap: .3vw;
+    align-items: center;
+}
+
+.Code .CodeInfo .CodeInfo-Right button .Button-Run {
+    color: #ff0000;
+}
+
+.Code .CodeInfo .CodeInfo-Right button .Button-Run:hover {
+    color: #b10000;
+}
+
+.Code .CodeInfo .CodeInfo-Right button .Button-Stop {
+    color: #009600;
+}
+
+.Code .CodeInfo .CodeInfo-Right button .Button-Stop:hover {
+    color: #006800;
 }
 
 .Code .CodeInfo .CodeInfo-Right button:hover {
@@ -36,4 +67,17 @@
 .Code .CodeContent .Code-Line > div > pre,
 .Code .CodeContent .Code-Line > div > pre span {
     font-family: "JetBrains Mono", monospace !important;
+}
+
+.Code .CodeRunner, .Code .CodeRunnerNotWorked {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5vw;
+    border-top: .3vw solid #fff;
+    padding: .5vw .5vw .5vw 2vw;
+    background-color: #f3f3f3;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1vw;
+    font-weight: 500;
 }

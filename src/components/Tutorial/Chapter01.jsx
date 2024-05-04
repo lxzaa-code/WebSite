@@ -6,7 +6,8 @@ import {FaArrowRight} from "react-icons/fa";
 import {parseSentence} from "../mess/markdownparser";
 
 function Chapter01() {
-
+    let para01 = "在这个章节中，我们将初步认识**C语言**，了解它的**历史**和**发展**。";
+    let para02 = "C语言于1972年由 **贝尔实验室** 的 *Dennie Ritch* 和 *Ken Thompson* 在开发 **UNIX** 操作系统时研制。";
     return (
         <div className="Chapter">
             <div className="Chapter-Top">
@@ -35,64 +36,10 @@ function Chapter01() {
                         <h6>概述</h6>
                     </div>
                     <div className="Latest-Update"><FaClock/> <h6>最近更新 2024-05-02 | Mdr</h6></div>
-                    <p>在这个章节中，我们将初步认识C语言，了解它的历史和发展。</p>
+                    <p dangerouslySetInnerHTML={{__html: parseSentence(para01)}}></p>
                     <h2 id="hello-world-01">历史</h2>
-                    <p dangerouslySetInnerHTML={{__html: parseSentence("C语言于1972年由 **贝尔实验室** 的 *Dennie Ritch* 和 *Ken Thompson* 在开发 **UNIX** 操作系统时研制。")}}></p>
+                    <p dangerouslySetInnerHTML={{__html: parseSentence(para02)}}></p>
                     <h2 id="hello-world-02">语言标准</h2>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p id="aaaa">1</p>
                     <div className="Chapter-Bottom">
                         <div className="Chapter-Bottom-Left">
 
