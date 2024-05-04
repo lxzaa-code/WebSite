@@ -11,9 +11,12 @@ function Chapter02() {
     let code01 = `#include<stdio.h>
 
 int main(void){
-    printf("hello world");
+    printf("hello world"); // output the string
 };
 `;
+
+    let para01 = "本节中，我们将写一个可以输出 **hello world** 的小程序!";
+    let para02 = "C语言中有很多**内置**的**函数**，他们在**标准库**中被定义。";
     return (
         <div className="Chapter">
             <div className="Chapter-Top">
@@ -38,53 +41,10 @@ int main(void){
                         <h6>概述</h6>
                     </div>
                     <div className="Latest-Update"><FaClock/> <h6>最近更新 2024-05-02 | Mdr</h6></div>
-                    <p dangerouslySetInnerHTML={{__html: parseSentence("本节中，我们将写一个可以输出 **hello world** 的小程序")}}></p>
+                    <p dangerouslySetInnerHTML={{__html: parseSentence(para01)}}></p>
                     <h2 id="hello-world-03">代码</h2>
                     <Code code={{str: code01}}/>
-                    {/*<CodeBlock code={code01} language={"C"}></CodeBlock>*/}
-                    {/*<div className="Code" id="Code-01-02-01">*/}
-                    {/*    <div className="Code-Line">*/}
-                    {/*        <div className="Code-Line-Number-Wrapper">*/}
-                    {/*            <div className="Code-Line-Number">1</div>*/}
-                    {/*        </div>*/}
-                    {/*        <div>*/}
-                    {/*            <pre>*/}
-                    {/*                <span className='Processor'>#include</span>*/}
-                    {/*                <span className="String"> &lt;stdio.h&gt;</span>*/}
-                    {/*            </pre>*/}
-                    {/*        </div>*/}
-                    {/*    </div>*/}
-                    {/*    <div className="Code-Line">*/}
-                    {/*        <div className="Code-Line-Number-Wrapper">*/}
-                    {/*            <div className="Code-Line-Number">2</div>*/}
-                    {/*        </div>*/}
-                    {/*    </div>*/}
-                    {/*    <div className="Code-Line">*/}
-                    {/*        <div className="Code-Line-Number-Wrapper">*/}
-                    {/*            <div className="Code-Line-Number">3</div>*/}
-                    {/*        </div>*/}
-                    {/*        <div>*/}
-                    {/*            <pre>*/}
-                    {/*                <span className='KeyWord'>int</span>*/}
-                    {/*                {" "}*/}
-                    {/*                <span className="Function">main</span>*/}
-                    {/*                {"("}*/}
-                    {/*                <span className="KeyWord">void</span>*/}
-                    {/*                {") {"}*/}
-                    {/*            </pre>*/}
-                    {/*        </div>*/}
-                    {/*    </div>*/}
-                    {/*    <div className="Code-Line">*/}
-                    {/*        <div className="Code-Line-Number-Wrapper">*/}
-                    {/*            <div className="Code-Line-Number">4</div>*/}
-                    {/*        </div>*/}
-                    {/*        <div>*/}
-                    {/*            <pre>*/}
-                    {/*                <span className="Function">    printf</span>*/}
-                    {/*            </pre>*/}
-                    {/*        </div>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
+                    <p dangerouslySetInnerHTML={{__html: parseSentence(para02)}}></p>
                     <div className="Chapter-Bottom">
                         <div className="Chapter-Bottom-Left">
                             <Link to="/tutorial/01/0"><FaArrowLeft/>上一页</Link>
