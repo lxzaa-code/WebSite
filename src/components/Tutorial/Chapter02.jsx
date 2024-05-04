@@ -8,15 +8,15 @@ import Code from "./Code";
 
 function Chapter02() {
 
-    let code01 = `#include<stdio.h>
+    let code01 = `#include <stdio.h>
 
-int main(void){
+int main(void) {
     printf("hello world"); // output the string
 };
 `;
 
     let para01 = "本节中，我们将写一个可以输出 **hello world** 的小程序!";
-    let para02 = "C语言中有很多**内置**的**函数**，他们在**标准库**中被定义。";
+    let para02 = "C语言中有很多 **内置** 的 **函数**，他们在 **标准库** 中被定义。";
     return (
         <div className="Chapter">
             <div className="Chapter-Top">
@@ -33,7 +33,6 @@ int main(void){
                 <div className="Chapter-Right">
                     <div className="Current-Position">
                         <GiPositionMarker/>
-                        <h6>当前位置</h6>
                         <a href='/'>主页</a>
                         <h6>></h6>
                         <a href="/tutorial">引导式教程</a>

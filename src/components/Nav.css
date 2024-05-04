@@ -15,7 +15,7 @@
 
 .Nav-Right {
     margin-right: 3vw;
-    gap: 2vw;
+    gap: 2.5vw;
 }
 
 .Nav-Right .Log-In,
@@ -62,7 +62,8 @@
 .Nav-Right .Website .WebsiteList a {
     color: black;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.2vw;
+    font-size: 1.3vw;
+    margin-top: .5vw;
     transition: color 0.3s;
 }
 

@@ -24,7 +24,7 @@ function Nav({ user }) {
                         <div className="WebsiteList">
                             <Link rel="noreferrer" target={"_blank"} to="https://github.com">Github</Link>
                             <Link rel="noreferrer" target={"_blank"} to="https://godbolt.org">Compiler Explorer</Link>
-                            <Link rel="noreferrer" target={"_blank"} to="https://zh.cppreference.com">Cpp Reference</Link>
+                            <Link rel="noreferrer" target={"_blank"} to="https://zh.cppreference.com">C++ Reference</Link>
                             <Link rel="noreferrer" target={"_blank"} to="https://stackoverflow.com">Stack Overflow</Link>
                         </div>
                     </div>

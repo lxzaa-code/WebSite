@@ -28,7 +28,6 @@ function Chapter01() {
                 <div className="Chapter-Right">
                     <div className="Current-Position">
                         <GiPositionMarker/>
-                        <h6>当前位置</h6>
                         <a href='/'>主页</a>
                         <h6>></h6>
                         <a href="/tutorial">引导式教程</a>

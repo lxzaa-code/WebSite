@@ -9,7 +9,7 @@ function ReturnMainPage() {
                      window.location.href = "/"
                  }}>
                 <FaArrowLeft/>
-                Return Homepage
+                Home
             </div>
         </div>
     )
