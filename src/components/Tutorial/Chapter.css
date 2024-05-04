@@ -53,7 +53,7 @@
     margin-bottom: 1vw;
 }
 
-.Chapter h1 > span {
+.Chapter h1>span {
     font-size: 1.5vw;
     color: #444;
     display: flex;
@@ -66,11 +66,11 @@
     margin: .5vw 0;
 }
 
-.Chapter .Chapter-Left > p {
+.Chapter .Chapter-Left>p {
     color: rebeccapurple;
 }
 
-.Chapter .Chapter-Left > p:hover {
+.Chapter .Chapter-Left>p:hover {
     color: #a950ff;
 }
 
@@ -114,9 +114,6 @@
     align-items: center;
     padding: 1vw 2vw;
     border-radius: 1.75vw;
-    background: white;
-    border: 1px solid rebeccapurple;
-    color: rebeccapurple;
     height: 1.5vw;
     font-size: 1.6vw;
     font-family: "Poppins", serif;
@@ -125,9 +122,27 @@
     transition: all 0.3s;
 }
 
-.Chapter .Chapter-Bottom a:hover {
+.Chapter .Chapter-Bottom .Chapter-Bottom-Left a {
+    background: white;
+    border: 1px solid rebeccapurple;
+    color: rebeccapurple;
+}
+
+.Chapter .Chapter-Bottom .Chapter-Bottom-Left a:hover {
     background: rebeccapurple;
     color: white;
+}
+
+.Chapter .Chapter-Bottom .Chapter-Bottom-Right a {
+    background: rebeccapurple;
+    color: white;
+    border: 1px solid rebeccapurple;
+}
+
+.Chapter .Chapter-Bottom .Chapter-Bottom-Right a:hover {
+    background: white;
+    color: rebeccapurple;
+    border: rebeccapurple 1px solid;
 }
 
 .Chapter .Code {
@@ -142,7 +157,7 @@
     flex-direction: row;
 }
 
-.Chapter .Code .Code-Line-Number-Wrapper{
+.Chapter .Code .Code-Line-Number-Wrapper {
     display: flex;
     justify-content: right;
     width: 2vw;
