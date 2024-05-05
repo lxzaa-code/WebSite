@@ -11,13 +11,16 @@ function Chapter02() {
     let code01 = `#include <stdio.h>
 
 int main(void) {
-    printf("hello world"); // output the string
+    printf("Hello World!"); // output the string
+    return 0;
 };
 `;
 
-    let para01 = "本节中，我们将写一个可以输出 **hello world** 的小程序!";
-    let para02 = "C语言中有很多 **内置** 的 **函数**，他们在 **标准库** 中被定义。有关**函数**内容在后续章节会涉及到。";
-    let para03 = "函数 `printf` 在标准库的 `stdio.h` 这个文件中被定义，通过预处理器指令 `#include` 引入。";
+    let para01 = "本节中，我们将写一个可以输出 **hello world** 的小程序，并初试 `printf()` 函数 **输出字符串** 的用法！";
+    let para02 = "C语言中有很多 **内置** 的 **函数**，他们在 **标准库** 中被定义。";
+    let para03 = "函数 `printf` 在标准库的 `stdio.h` 这个文件中被定义，通过预处理器指令 `#include` 引入这个文件（要引入的文件名通过尖括号包裹）。标准库里面的任何内容都需要引入对应的文件之后才能使用。";
+    let para04 = "`printf()` 函数可以只接收一个字符串，它会把这个字符串输出到屏幕上。"
+    let para05 = "如果运行这段代码，你会看到输出界面出现了一句 `Hello World!`，快试试吧！"
 
     return (
         <div className="Chapter">
@@ -30,7 +33,7 @@ int main(void) {
                     <p onClick={() => {
                         const section2 = document.querySelector("#hello-world-03");
                         section2.scrollIntoView({ behavior: "smooth" });
-                    }}>代码</p>
+                    }}>printf 输出字符串</p>
                 </div>
                 <div className="Chapter-Right">
                     <div className="Current-Position">
@@ -41,20 +44,20 @@ int main(void) {
                         <h6>&gt;</h6>
                         <h6>概述</h6>
                     </div>
-                    <div className="Latest-Update"><FaClock /> <h6>最近更新 2024-05-02 | Mdr</h6></div>
+                    <div className="Latest-Update"><FaClock /> <h6>最近更新 2024-05-05 | Mdr</h6></div>
                     <p dangerouslySetInnerHTML={{ __html: parseSentence(para01) }}></p>
-                    <h2 id="hello-world-03">代码</h2>
+                    <h2 id="hello-world-03">printf 输出字符串</h2>
                     <Code code={{ str: code01 }} />
                     <p dangerouslySetInnerHTML={{ __html: parseSentence(para02) }}></p>
                     <p dangerouslySetInnerHTML={{ __html: parseSentence(para03) }}></p>
-
-
+                    <p dangerouslySetInnerHTML={{ __html: parseSentence(para04) }}></p>
+                    <p dangerouslySetInnerHTML={{ __html: parseSentence(para05) }}></p>
                     <div className="Chapter-Bottom">
                         <div className="Chapter-Bottom-Left">
                             <Link to="/tutorial/01/0"><FaArrowLeft />上一页</Link>
                         </div>
                         <div className="Chapter-Bottom-Right">
-                            <Link to="/tutorial/01/1">下一页<FaArrowRight /></Link>
+                            <Link to="/tutorial/01/2">下一页<FaArrowRight /></Link>
                         </div>
                     </div>
                 </div>
