@@ -4,6 +4,7 @@ export function parseSentence(str) {
     let afterStr = null;
     let isStrong = false;
     let isItalic = false;
+    let isCode = false;
     do {
         afterStr = currentStr;
         if (isStrong) {
@@ -27,6 +28,19 @@ export function parseSentence(str) {
             newStr = currentStr.replace('*', '<i>');
             currentStr = newStr;
             isItalic = true;
+        }
+    } while (afterStr !== currentStr);
+
+    do {
+        afterStr = currentStr;
+        if (isCode) {
+            newStr = currentStr.replace('`', '</span>');
+            currentStr = newStr;
+            isCode = false;
+        } else {
+            newStr = currentStr.replace('`', '<span>');
+            currentStr = newStr;
+            isCode = true;
         }
     } while (afterStr !== currentStr);
 

@@ -66,6 +66,14 @@
     margin: .5vw 0;
 }
 
+.Chapter p>span {
+    font-family: 'JetBrains Mono', monospace !important;
+    background-color: #eee;
+    padding-left: .3vw;
+    padding-right: .3vw;
+    border-radius: .4vw;
+}
+
 .Chapter .Chapter-Left>p {
     color: rebeccapurple;
 }
