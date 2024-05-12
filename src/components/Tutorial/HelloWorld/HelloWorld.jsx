@@ -8,6 +8,7 @@ import Chapter03 from "../Chapter03";
 let arr = [<Chapter01 />, <Chapter02 />, <Chapter03 />];
 
 function HelloWorld() {
+    document.title = "HelloWorld | Mdr-C-Tutorial"
     const params = useParams()
     let id = params.id
     return (

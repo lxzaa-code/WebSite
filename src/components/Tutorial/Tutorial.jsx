@@ -11,7 +11,7 @@ import ReturnMainPage from "../mess/ReturnMainPage";
 // import Chapter09 from "./Chapter09";
 // import Chapter10 from "./Chapter10";
 import TutorialButtonBar from "./TutorialButtonBar";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 //
 // function Process({process, number}) {
 //     console.log(process, number);
@@ -30,12 +30,12 @@ import {Link} from "react-router-dom";
 //     } else return <div>error</div>;
 // }
 
-export function scrollToAnchor(anchorName){
+export function scrollToAnchor(anchorName) {
     if (anchorName) {
         // 找到锚点
         let anchorElement = document.getElementById(anchorName);
         // 如果对应id的锚点存在，就跳转到锚点
-        if(anchorElement) { anchorElement.scrollIntoView({block: 'start', behavior: 'smooth'}); }
+        if (anchorElement) { anchorElement.scrollIntoView({ block: 'start', behavior: 'smooth' }); }
     }
 }
 
@@ -51,10 +51,10 @@ function Tutorial() {
     document.title = 'Guided-Tutorial | Mdr-C-Tutorial';
     return (
         <div className="Tutorial">
-            <ReturnMainPage/>
+            <ReturnMainPage />
             <div className="Tutorial-Title">
                 <h1><span>引导式教程</span> Mdr-C-Tutorial</h1>
-                <TutorialButtonBar/>
+                <TutorialButtonBar />
                 {/*<div className="Process">*/}
                 {/*    <Process process={process} number={1}/>*/}
                 {/*    <Process process={process} number={2}/>*/}
@@ -71,12 +71,11 @@ function Tutorial() {
             {/*<Chapter number={process}/>*/}
             <div className="Tutorial-Main">
                 <div className="Tutorial-Main-Content">
-                    <div className="Tutorial-Item">
-                        <Link to="/tutorial/01/0">Hello world</Link>
-                    </div>
+                    <Link to="/tutorial/01/0">Hello world</Link>
+                    <Link to="/tutorial/02/0">Hello world</Link>
                 </div>
                 <div className="Tutorial-Main-Article">
-
+                    <h1>Hello World</h1>
                 </div>
             </div>
         </div>

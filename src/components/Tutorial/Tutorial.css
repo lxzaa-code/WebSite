@@ -54,7 +54,20 @@
     background-color: #8f8f8f;
 }
 
-.Tutorial-Main{
+.Tutorial-Main {
     display: flex;
     flex-direction: row;
+    margin-top: 3vw;
+}
+
+.Tutorial-Main .Tutorial-Main-Content {
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+    width: 20vw;
+}
+
+.Tutorial-Main .Tutorial-Main-Content a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2vw;
 }
