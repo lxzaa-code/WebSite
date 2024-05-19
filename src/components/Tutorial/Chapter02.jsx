@@ -22,12 +22,13 @@ int main(void) {
     let para04 = "`printf()` 函数可以只接收一个字符串，它会把这个字符串输出到屏幕上。请看下面的代码："
     let para05 = "如果运行这段代码，你会看到输出界面出现了一句 `Hello World!`，快试试吧！"
 
-    let para11 = "在C语言中，**字符串** 是一些字符的排列，可以用来表示文字。"
+    let para11 = "在C语言中，**字符串** 是一些字符的排列，可以用来表示文字。比如，`\"Hello World!\"` 就是个字符串。";
+    let para12 = "（注：其实对于 `\"Hello World!\"`，更准确的说法是：它是一个 **字符串字面量**。关于 **字符串字面量** 的内容请看讲义。）"
 
     return (
         <div className="Chapter">
             <div className="Chapter-Top">
-                <h1>[1/7 章]: 概述 <span><FaClock /> 20分钟 [2/5 页]</span></h1>
+                <h1>[1/7 章]: 输出字符串 <span><FaClock /> 20分钟 [2/5 页]</span></h1>
                 <hr />
             </div>
             <div className="Chapter-Main">
@@ -48,7 +49,7 @@ int main(void) {
                         <h6>&gt;</h6>
                         <a href="/tutorial">引导式教程</a>
                         <h6>&gt;</h6>
-                        <h6>概述</h6>
+                        <h6>输出字符串</h6>
                     </div>
                     <div className="Latest-Update"><FaClock /> <h6>最近更新 2024-05-05 | Mdr</h6></div>
                     <p dangerouslySetInnerHTML={{ __html: parseSentence(para01) }}></p>
@@ -56,6 +57,7 @@ int main(void) {
                     <h2 id="hello-world-0201">什么是字符串</h2>
 
                     <p dangerouslySetInnerHTML={{ __html: parseSentence(para11) }}></p>
+                    <p dangerouslySetInnerHTML={{ __html: parseSentence(para12) }}></p>
                     <h2 id="hello-world-0202">printf 输出字符串</h2>
                     <p dangerouslySetInnerHTML={{ __html: parseSentence(para02) }}></p>
                     <p dangerouslySetInnerHTML={{ __html: parseSentence(para03) }}></p>

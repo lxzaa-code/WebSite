@@ -32,7 +32,7 @@ int main(void) {
     return (
         <div className="Chapter">
             <div className="Chapter-Top">
-                <h1>[1/7 章]: 概述 <span><FaClock /> 20分钟 [3/5 页]</span></h1>
+                <h1>[1/7 章]: 输出字符串 <span><FaClock /> 20分钟 [3/5 页]</span></h1>
                 <hr />
             </div>
             <div className="Chapter-Main">
@@ -53,7 +53,7 @@ int main(void) {
                         <h6>&gt;</h6>
                         <a href="/tutorial">引导式教程</a>
                         <h6>&gt;</h6>
-                        <h6>概述</h6>
+                        <h6>输出字符串</h6>
                     </div>
                     <div className="Latest-Update"><FaClock /> <h6>最近更新 2024-05-12 | Mdr</h6></div>
                     <p dangerouslySetInnerHTML={{ __html: parseSentence(para01) }}></p>
@@ -72,7 +72,7 @@ int main(void) {
                             <Link to="/tutorial/01/1"><FaArrowLeft />上一页</Link>
                         </div>
                         <div className="Chapter-Bottom-Right">
-                            <Link to="/tutorial/01/2">下一页<FaArrowRight /></Link>
+                            <Link to="/tutorial/01/3">下一页<FaArrowRight /></Link>
                         </div>
                     </div>
                 </div>

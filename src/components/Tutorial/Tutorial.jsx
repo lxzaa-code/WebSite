@@ -1,35 +1,8 @@
 import './Tutorial.css'
 import ReturnMainPage from "../mess/ReturnMainPage";
-// import Chapter01 from "./Chapter01";
-// import Chapter02 from "./Chapter02";
-// import Chapter03 from "./Chapter03";
-// import Chapter04 from "./Chapter04";
-// import Chapter05 from "./Chapter05";
-// import Chapter06 from "./Chapter06";
-// import Chapter07 from "./Chapter07";
-// import Chapter08 from "./Chapter08";
-// import Chapter09 from "./Chapter09";
-// import Chapter10 from "./Chapter10";
 import TutorialButtonBar from "./TutorialButtonBar";
 import { Link } from "react-router-dom";
-//
-// function Process({process, number}) {
-//     console.log(process, number);
-//     if (process === number)
-//         return <span className="Chapter-Current"></span>;
-//     if (process < number)
-//         return <span className="Chapter-Future"></span>;
-//     else return <span className="Chapter-Finished"></span>;
-// }
-//
-// function Chapter({number}) {
-//     let arr = [<Chapter01/>, <Chapter02/>, <Chapter03/>, <Chapter04/>, <Chapter05/>, <Chapter06/>, <Chapter07/>,
-//         <Chapter08/>, <Chapter09/>, <Chapter10/>];
-//     if (number >= 0 && number < 10) {
-//         return arr[number - 1];
-//     } else return <div>error</div>;
-// }
-
+import { parseSentence } from '../mess/markdownparser';
 export function scrollToAnchor(anchorName) {
     if (anchorName) {
         // 找到锚点
@@ -40,14 +13,11 @@ export function scrollToAnchor(anchorName) {
 }
 
 function Tutorial() {
+    let para01 = "**本章主要探讨** `**printf**` **函数的用法。**"
+    let para02 = "：讲述历史，发展，语言标准等。"
+    let para03 = "：讲解 `printf` 函数输出 **字符串** 的功能。"
+    let para04 = "：讲解如何给 `printf` 函数添加额外 **参数**，并用 **格式化字符** 将这些参数包含在输出的内容当中。"
 
-    // let process;
-    // if (localStorage.getItem("Mdr-C-Guided-Tutorial") === undefined) {
-    //     localStorage.setItem("Mdr-C-Guided-Tutorial", "1");
-    //     process = 1;
-    // } else {
-    //     process = Number(localStorage.getItem("Mdr-C-Guided-Tutorial"));
-    // }
     document.title = 'Guided-Tutorial | Mdr-C-Tutorial';
     return (
         <div className="Tutorial">
@@ -55,27 +25,27 @@ function Tutorial() {
             <div className="Tutorial-Title">
                 <h1><span>引导式教程</span> Mdr-C-Tutorial</h1>
                 <TutorialButtonBar />
-                {/*<div className="Process">*/}
-                {/*    <Process process={process} number={1}/>*/}
-                {/*    <Process process={process} number={2}/>*/}
-                {/*    <Process process={process} number={3}/>*/}
-                {/*    <Process process={process} number={4}/>*/}
-                {/*    <Process process={process} number={5}/>*/}
-                {/*    <Process process={process} number={6}/>*/}
-                {/*    <Process process={process} number={7}/>*/}
-                {/*    <Process process={process} number={8}/>*/}
-                {/*    <Process process={process} number={9}/>*/}
-                {/*    <Process process={process} number={10}/>*/}
-                {/*</div>*/}
             </div>
-            {/*<Chapter number={process}/>*/}
             <div className="Tutorial-Main">
                 <div className="Tutorial-Main-Content">
-                    <Link to="/tutorial/01/0">Hello world</Link>
-                    <Link to="/tutorial/02/0">Hello world</Link>
+                    <Link to="/tutorial/01/0">输出字符串</Link>
+                    <Link to="/tutorial/02/0">数字和运算</Link>
                 </div>
                 <div className="Tutorial-Main-Article">
-                    <h1>Hello World</h1>
+                    <h1>输出字符串</h1>
+                    <p dangerouslySetInnerHTML={{ __html: parseSentence(para01) }}></p>
+                    <p>
+                        <Link to="/tutorial/01/0">1. C语言的基本知识</Link>
+                        <p className="Tutorial-Main-Article-Inline-Para" dangerouslySetInnerHTML={{ __html: parseSentence(para02) }}></p>
+                    </p>
+                    <p>
+                        <Link to="/tutorial/01/1">2. 输出字符串</Link>
+                        <p className="Tutorial-Main-Article-Inline-Para" dangerouslySetInnerHTML={{ __html: parseSentence(para03) }}></p>
+                    </p>
+                    <p><Link to="/tutorial/01/2">3. 添加参数</Link>
+                        <p className="Tutorial-Main-Article-Inline-Para" dangerouslySetInnerHTML={{ __html: parseSentence(para04) }}></p>
+                    </p>
+                    <h1>数字和运算</h1>
                 </div>
             </div>
         </div>

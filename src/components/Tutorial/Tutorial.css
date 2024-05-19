@@ -64,10 +64,51 @@
     display: flex;
     flex-direction: column;
     gap: .5vw;
-    width: 20vw;
+    width: 18vw;
+    margin-top: 2vw;
+    margin-left: 2vw;
 }
 
 .Tutorial-Main .Tutorial-Main-Content a {
     font-family: 'Poppins', sans-serif;
     font-size: 1.2vw;
+}
+
+.Tutorial-Main .Tutorial-Main-Article {
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+}
+
+.Tutorial-Main .Tutorial-Main-Article h1 {
+    color: rebeccapurple;
+    margin-bottom: 0.4vw;
+    margin-top: 0.8vw;
+}
+
+
+.Tutorial-Main .Tutorial-Main-Article p {
+    color: #000;
+    font-size: 1.2vw;
+}
+
+.Tutorial-Main .Tutorial-Main-Article p.Tutorial-Main-Article-Inline-Para {
+    display: inline;
+}
+
+.Tutorial-Main .Tutorial-Main-Article p>span {
+    font-family: 'JetBrains Mono', monospace !important;
+    background-color: #eee;
+    color: #444;
+    padding-left: .3vw;
+    padding-right: .3vw;
+    border-radius: .4vw;
+}
+
+.Tutorial-Main .Tutorial-Main-Article p>a {
+    transition: all 0.3s;
+}
+
+.Tutorial-Main .Tutorial-Main-Article p>a:hover {
+    color: #aa55ff;
 }
