@@ -1,7 +1,5 @@
 import './Chapter.css';
 
-import { FaClock } from "react-icons/fa6";
-import { GiPositionMarker } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { parseSentence } from "../mess/markdownparser";
@@ -30,51 +28,24 @@ int main(void) {
     let para06 = "如果想 **输出百分号**，用 `%%`。请看下面的代码："
 
     return (
-        <div className="Chapter">
-            <div className="Chapter-Top">
-                <h1>[1/7 章]: 输出字符串 <span><FaClock /> 20分钟 [3/5 页]</span></h1>
-                <hr />
-            </div>
-            <div className="Chapter-Main">
-                <div className="Chapter-Left">
-                    <p onClick={() => {
-                        const section2 = document.querySelector("#hello-world-0301");
-                        section2.scrollIntoView({ behavior: "smooth" });
-                    }}>为 printf 添加参数</p>
-                    <p onClick={() => {
-                        const section2 = document.querySelector("#hello-world-0302");
-                        section2.scrollIntoView({ behavior: "smooth" });
-                    }}>格式化字符的不同种类</p>
-                </div>
-                <div className="Chapter-Right">
-                    <div className="Current-Position">
-                        <GiPositionMarker />
-                        <a href='/'>主页</a>
-                        <h6>&gt;</h6>
-                        <a href="/tutorial">引导式教程</a>
-                        <h6>&gt;</h6>
-                        <h6>输出字符串</h6>
-                    </div>
-                    <div className="Latest-Update"><FaClock /> <h6>最近更新 2024-05-12 | Mdr</h6></div>
-                    <p dangerouslySetInnerHTML={{ __html: parseSentence(para01) }}></p>
-                    <h2 id="hello-world-0301">为 printf 添加参数</h2>
-                    <Code code={{ str: code01 }}></Code>
-                    <p dangerouslySetInnerHTML={{ __html: parseSentence(para02) }}></p>
-                    <p dangerouslySetInnerHTML={{ __html: parseSentence(para03) }}></p>
-                    <h2 id="hello-world-0302">格式化字符的不同种类</h2>
-                    <p dangerouslySetInnerHTML={{ __html: parseSentence(para04) }}></p>
-                    <p dangerouslySetInnerHTML={{ __html: parseSentence(para05) }}></p>
-                    <p dangerouslySetInnerHTML={{ __html: parseSentence(para06) }}></p>
-                    <Code code={{ str: code02 }}></Code>
+        <div>
+            <p dangerouslySetInnerHTML={{ __html: parseSentence(para01) }}></p>
+            <h2 id="hello-world-0301">为 printf 添加参数</h2>
+            <Code code={{ str: code01 }}></Code>
+            <p dangerouslySetInnerHTML={{ __html: parseSentence(para02) }}></p>
+            <p dangerouslySetInnerHTML={{ __html: parseSentence(para03) }}></p>
+            <h2 id="hello-world-0302">格式化字符的不同种类</h2>
+            <p dangerouslySetInnerHTML={{ __html: parseSentence(para04) }}></p>
+            <p dangerouslySetInnerHTML={{ __html: parseSentence(para05) }}></p>
+            <p dangerouslySetInnerHTML={{ __html: parseSentence(para06) }}></p>
+            <Code code={{ str: code02 }}></Code>
 
-                    <div className="Chapter-Bottom">
-                        <div className="Chapter-Bottom-Left">
-                            <Link to="/tutorial/01/1"><FaArrowLeft />上一页</Link>
-                        </div>
-                        <div className="Chapter-Bottom-Right">
-                            <Link to="/tutorial/01/3">下一页<FaArrowRight /></Link>
-                        </div>
-                    </div>
+            <div className="Chapter-Bottom">
+                <div className="Chapter-Bottom-Left">
+                    <Link to="/tutorial/01/1"><FaArrowLeft />上一页</Link>
+                </div>
+                <div className="Chapter-Bottom-Right">
+                    <Link to="/tutorial/01/3">下一页<FaArrowRight /></Link>
                 </div>
             </div>
         </div>

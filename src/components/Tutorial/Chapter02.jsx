@@ -1,6 +1,4 @@
 import './Chapter.css';
-import { FaClock } from "react-icons/fa6";
-import { GiPositionMarker } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { parseSentence } from "../mess/markdownparser";
@@ -26,52 +24,25 @@ int main(void) {
     let para12 = "（注：其实对于 `\"Hello World!\"`，更准确的说法是：它是一个 **字符串字面量**。关于 **字符串字面量** 的内容请看讲义。）"
 
     return (
-        <div className="Chapter">
-            <div className="Chapter-Top">
-                <h1>[1/7 章]: 输出字符串 <span><FaClock /> 20分钟 [2/5 页]</span></h1>
-                <hr />
-            </div>
-            <div className="Chapter-Main">
-                <div className="Chapter-Left">
-                    <p onClick={() => {
-                        const section2 = document.querySelector("#hello-world-0201");
-                        section2.scrollIntoView({ behavior: "smooth" });
-                    }}>什么是字符串</p>
-                    <p onClick={() => {
-                        const section2 = document.querySelector("#hello-world-0202");
-                        section2.scrollIntoView({ behavior: "smooth" });
-                    }}>printf 输出字符串</p>
+        <div>
+            <p dangerouslySetInnerHTML={{ __html: parseSentence(para01) }}></p>
+
+            <h2 id="hello-world-0201">什么是字符串</h2>
+
+            <p dangerouslySetInnerHTML={{ __html: parseSentence(para11) }}></p>
+            <p dangerouslySetInnerHTML={{ __html: parseSentence(para12) }}></p>
+            <h2 id="hello-world-0202">printf 输出字符串</h2>
+            <p dangerouslySetInnerHTML={{ __html: parseSentence(para02) }}></p>
+            <p dangerouslySetInnerHTML={{ __html: parseSentence(para03) }}></p>
+            <p dangerouslySetInnerHTML={{ __html: parseSentence(para04) }}></p>
+            <Code code={{ str: code01 }} />
+            <p dangerouslySetInnerHTML={{ __html: parseSentence(para05) }}></p>
+            <div className="Chapter-Bottom">
+                <div className="Chapter-Bottom-Left">
+                    <Link to="/tutorial/01/0"><FaArrowLeft />上一页</Link>
                 </div>
-                <div className="Chapter-Right">
-                    <div className="Current-Position">
-                        <GiPositionMarker />
-                        <a href='/'>主页</a>
-                        <h6>&gt;</h6>
-                        <a href="/tutorial">引导式教程</a>
-                        <h6>&gt;</h6>
-                        <h6>输出字符串</h6>
-                    </div>
-                    <div className="Latest-Update"><FaClock /> <h6>最近更新 2024-05-05 | Mdr</h6></div>
-                    <p dangerouslySetInnerHTML={{ __html: parseSentence(para01) }}></p>
-
-                    <h2 id="hello-world-0201">什么是字符串</h2>
-
-                    <p dangerouslySetInnerHTML={{ __html: parseSentence(para11) }}></p>
-                    <p dangerouslySetInnerHTML={{ __html: parseSentence(para12) }}></p>
-                    <h2 id="hello-world-0202">printf 输出字符串</h2>
-                    <p dangerouslySetInnerHTML={{ __html: parseSentence(para02) }}></p>
-                    <p dangerouslySetInnerHTML={{ __html: parseSentence(para03) }}></p>
-                    <p dangerouslySetInnerHTML={{ __html: parseSentence(para04) }}></p>
-                    <Code code={{ str: code01 }} />
-                    <p dangerouslySetInnerHTML={{ __html: parseSentence(para05) }}></p>
-                    <div className="Chapter-Bottom">
-                        <div className="Chapter-Bottom-Left">
-                            <Link to="/tutorial/01/0"><FaArrowLeft />上一页</Link>
-                        </div>
-                        <div className="Chapter-Bottom-Right">
-                            <Link to="/tutorial/01/2">下一页<FaArrowRight /></Link>
-                        </div>
-                    </div>
+                <div className="Chapter-Bottom-Right">
+                    <Link to="/tutorial/01/2">下一页<FaArrowRight /></Link>
                 </div>
             </div>
         </div>

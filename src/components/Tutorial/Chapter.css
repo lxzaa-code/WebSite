@@ -50,7 +50,7 @@
     flex-direction: row;
     align-items: baseline;
     gap: 1vw;
-    margin-bottom: 1vw;
+    margin-bottom: 1.5vw;
 }
 
 .Chapter h1>span {
@@ -63,7 +63,7 @@
 
 .Chapter p {
     font-size: 1.2vw;
-    margin: .5vw 0;
+    margin: .8vw 0;
 }
 
 .Chapter p>span {
@@ -86,8 +86,8 @@
 .Chapter h2 {
     font-size: 1.6vw;
     color: rebeccapurple;
-    margin-top: 1vw;
-    margin-bottom: 0.5vw;
+    margin-top: 1.4vw;
+    margin-bottom: .6vw;
     font-weight: 600;
 }
 
