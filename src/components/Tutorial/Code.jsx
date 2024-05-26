@@ -93,4 +93,24 @@ function Code({ code, isHiden, }) {
     )
 }
 
-export default Code
+export function LineCode({ code }) {
+    let arr = my_split({ code: code, s: '\n' });
+    let lines = arr.map(item => <div className="Line-Code-Line">
+        <div>
+            <pre dangerouslySetInnerHTML={{ __html: hljs.highlight(item.content, { language: "c" }).value }}></pre>
+        </div>
+    </div>)
+    return (
+        <div className="Code">
+            <div className="CodeContent">
+                {lines.map((line) => (
+                    <div>
+                        {line}
+                    </div>
+                ))}
+            </div>
+        </div>
+    )
+}
+
+export default Code;

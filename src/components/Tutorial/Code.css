@@ -1,3 +1,28 @@
+.Code {
+    margin: .5vw 0;
+    margin-bottom: 1.5vw;
+    background: #f7f7f7;
+    font-size: 1vw;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.Code .Code-Line {
+    display: flex;
+    flex-direction: row;
+}
+
+.Code .Code-Line-Number-Wrapper {
+    display: flex;
+    justify-content: right;
+    width: 2vw;
+    margin-right: 1vw;
+}
+
+.Code .Code-Line-Number-Wrapper .Code-Line-Number {
+    font-weight: 200;
+    color: rebeccapurple;
+}
+
 .Code .CodeInfo {
     background-color: #eee;
     display: flex;
@@ -12,7 +37,7 @@
     font-family: "Nirmala UI", sans-serif;
     font-weight: 300;
     color: #333;
-    margin-left: 1.5vw;
+    margin-left: 1.9vw;
 }
 
 .Code .CodeInfo .CodeInfo-Right {
@@ -64,16 +89,22 @@
     padding: .5vw;
 }
 
-.Code .CodeContent .Code-Line > div > pre,
-.Code .CodeContent .Code-Line > div > pre span {
+.Code .CodeContent .Line-Code-Line {
+    padding-left: 1vw;
+}
+
+.Code .CodeContent .Line-Code-Line>div>pre,
+.Code .CodeContent .Line-Code-Line>div>pre span,
+.Code .CodeContent .Code-Line>div>pre,
+.Code .CodeContent .Code-Line>div>pre span {
     font-family: "JetBrains Mono", monospace !important;
 }
 
-.Code .CodeRunner{
+.Code .CodeRunner {
     font-family: "JetBrains Mono", monospace;
 }
 
-.Code .CodeRunnerNotWorked{
+.Code .CodeRunnerNotWorked {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
 }

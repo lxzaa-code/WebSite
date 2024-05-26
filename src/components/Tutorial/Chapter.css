@@ -85,9 +85,8 @@
 
 .Chapter h2 {
     font-size: 1.6vw;
-    color: rebeccapurple;
-    margin-top: 1.4vw;
-    margin-bottom: .6vw;
+    margin-top: 1.8vw;
+    margin-bottom: .8vw;
     font-weight: 600;
 }
 
@@ -154,28 +153,4 @@
     background: white;
     color: rebeccapurple;
     border: rebeccapurple 1px solid;
-}
-
-.Chapter .Code {
-    margin: .5vw 0;
-    background: #f7f7f7;
-    font-size: 1vw;
-    font-family: 'JetBrains Mono', monospace;
-}
-
-.Chapter .Code .Code-Line {
-    display: flex;
-    flex-direction: row;
-}
-
-.Chapter .Code .Code-Line-Number-Wrapper {
-    display: flex;
-    justify-content: right;
-    width: 2vw;
-    margin-right: 1vw;
-}
-
-.Chapter .Code .Code-Line-Number-Wrapper .Code-Line-Number {
-    font-weight: 200;
-    color: rebeccapurple;
 }
