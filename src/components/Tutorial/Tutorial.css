@@ -28,32 +28,6 @@
     color: rebeccapurple;
 }
 
-.Tutorial .Tutorial-Title .Process {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 4vw;
-}
-
-.Tutorial .Tutorial-Title .Process .Chapter-Finished, .Tutorial .Tutorial-Title .Process .Chapter-Current, .Tutorial .Tutorial-Title .Process .Chapter-Future {
-    height: .3vw;
-    width: 9vw;
-}
-
-.Tutorial .Tutorial-Title .Process .Chapter-Finished {
-    background-color: #000;
-}
-
-
-.Tutorial .Tutorial-Title .Process .Chapter-Current {
-    background-color: rebeccapurple;
-}
-
-.Tutorial .Tutorial-Title .Process .Chapter-Future {
-    background-color: #8f8f8f;
-}
-
 .Tutorial-Main {
     display: flex;
     flex-direction: row;
@@ -63,15 +37,26 @@
 .Tutorial-Main .Tutorial-Main-Content {
     display: flex;
     flex-direction: column;
-    gap: .5vw;
     width: 18vw;
     margin-top: 2vw;
     margin-left: 2vw;
 }
 
 .Tutorial-Main .Tutorial-Main-Content a {
+    display: inline;
     font-family: 'Poppins', sans-serif;
     font-size: 1.2vw;
+    padding: .5vw;
+    padding-left: 1.5vw;
+    margin-right: 5vw;
+    border-radius: 1.5vw;
+    transition: all .3s;
+}
+
+.Tutorial-Main .Tutorial-Main-Content a:hover {
+    background-color: #66339922;
+    transition: all 0;
+    color: #663399;
 }
 
 .Tutorial-Main .Tutorial-Main-Article {

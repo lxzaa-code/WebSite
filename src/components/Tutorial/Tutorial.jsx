@@ -42,7 +42,8 @@ function Tutorial() {
                         <Link to="/tutorial/01/1">2. 输出字符串</Link>
                         <p className="Tutorial-Main-Article-Inline-Para" dangerouslySetInnerHTML={{ __html: parseSentence(para03) }}></p>
                     </p>
-                    <p><Link to="/tutorial/01/2">3. 添加参数</Link>
+                    <p>
+                        <Link to="/tutorial/01/2">3. 添加参数</Link>
                         <p className="Tutorial-Main-Article-Inline-Para" dangerouslySetInnerHTML={{ __html: parseSentence(para04) }}></p>
                     </p>
                     <h1>数字和运算</h1>
