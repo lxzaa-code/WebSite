@@ -21,11 +21,14 @@
     color: #555;
 }
 
-.Tutorial .Tutorial-Title h1 span {
-    font-weight: 600;
+.Tutorial .Tutorial-Title h1>span {
     font-size: 4vw;
     margin-right: 2vw;
     color: rebeccapurple;
+}
+
+.Tutorial .Tutorial-Title h1>span>span {
+    font-weight: 600;
 }
 
 .Tutorial-Main {

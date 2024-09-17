@@ -1,7 +1,6 @@
 .FooterCopy {
     display: flex;
     flex-direction: column;
-    width: 30%;
     margin-top: 1.5vw;
 }
 

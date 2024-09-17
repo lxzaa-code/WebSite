@@ -23,7 +23,7 @@ function Tutorial() {
         <div className="Tutorial">
             <ReturnMainPage />
             <div className="Tutorial-Title">
-                <h1><span>引导式教程</span> Mdr-C-Tutorial</h1>
+                <h1><span><span>引导式</span>教程</span> Mdr-C-Tutorial</h1>
                 <TutorialButtonBar />
             </div>
             <div className="Tutorial-Main">

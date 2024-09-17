@@ -11,7 +11,7 @@ function Playground() {
                     <p>To Run Your Code</p>
                     <p>In Any Time</p>
                 </div>
-                <h2 style={{ marginLeft: ".5vw" }}>ps: Only C Supported</h2>
+                <h2 style={{ marginLeft: ".5vw" }}>ps: Not Only C Supported</h2>
                 <button onClick={
                     () => { window.location.href = "https://godbolt.org/z/1b965v1hx" }
                 }>Go!<FaArrowRight /></button>
