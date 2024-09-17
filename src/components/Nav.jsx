@@ -1,7 +1,7 @@
 import './Nav.css';
 import { FaChevronDown, FaGithub, FaMarkdown, FaRegFileCode } from "react-icons/fa";
 import Search from "./Nav/Search";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Nav({ user }) {
     return (
@@ -32,13 +32,13 @@ function Nav({ user }) {
                     &nbsp;
                     <FaChevronDown id="ChevronDown" />
                 </div>
-                <Link to="https://hfsz2313.github.io/C/#/">
-                    <FaMarkdown className="Nav-Icon Icon-Link"/>
+                <Link to="https://mdr.aymao.com/C/#/" target={"_blank"}>
+                    <FaMarkdown className="Nav-Icon Icon-Link" />
                 </Link>
-                <Link to="https://github.com/Mdr-C-Tutorial/C">
+                <Link to="https://github.com/Mdr-C-Tutorial/C" target={"_blank"}>
                     <FaGithub className="Nav-Icon Icon-Link" />
                 </Link>
-                <Link to="https://github.com/Mdr-C-Tutorial/Website">
+                <Link to="https://github.com/Mdr-C-Tutorial/Website" target={"_blank"}>
                     <FaRegFileCode className="Nav-Icon Icon-Link" />
                 </Link>
             </div>

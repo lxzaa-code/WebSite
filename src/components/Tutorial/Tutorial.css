@@ -51,6 +51,7 @@
     margin-right: 5vw;
     border-radius: 1.5vw;
     transition: all .3s;
+    color: #663399;
 }
 
 .Tutorial-Main .Tutorial-Main-Content a:hover {
@@ -92,6 +93,7 @@
 
 .Tutorial-Main .Tutorial-Main-Article p>a {
     transition: all 0.3s;
+    color: #663399;
 }
 
 .Tutorial-Main .Tutorial-Main-Article p>a:hover {

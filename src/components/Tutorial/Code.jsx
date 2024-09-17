@@ -1,8 +1,8 @@
 import './Code.css'
+import React from "react";
 import hljs from "../mess/myHighlight";
 import { setClipboard } from "../mess/setClipBoard";
 import { FaCopy } from "react-icons/fa";
-import React from "react";
 import { VscRunAll, VscRunErrors } from "react-icons/vsc";
 import { CiEdit } from "react-icons/ci";
 import { MdOutlineEditOff } from "react-icons/md";
