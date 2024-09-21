@@ -15,6 +15,12 @@ function Credits() {
                 <p>Xinlan Lu <FaHeart /></p>
             </div>
             <div className="Credits-Item">
+                <p>Yutong Liu <FaHeart /></p>
+            </div>
+            <div className="Credits-Item">
+                <p>Dan Feng <FaHeart /></p>
+            </div>
+            <div className="Credits-Item">
                 <p>Feilulu <FaHeart /></p>
                 <Link rel="noreferrer" target={"_blank"} to="https://github.com/LovelyLavender4"><FaGithub /></Link>
             </div>
@@ -35,7 +41,6 @@ function Credits() {
                 <Link rel="noreferrer" target={"_blank"} to="https://github.com/Kroner"><FaGithub /></Link>
                 <Link rel="noreferrer" target={"_blank"} to="https://www.cnblogs.com/Kroner"><FaWifi /></Link>
             </div>
-
             <div className="Credits-Item">
                 <p>xly</p>
                 <Link rel="noreferrer" target={"_blank"} to="https://github.com/LY-Xiang"><FaGithub /></Link>

@@ -8,7 +8,7 @@ function Playground() {
             <div className="Left">
                 <h1>Playground</h1>
                 <div style={{ marginLeft: ".5vw" }}>
-                    <p>To Run Your Code</p>
+                    <p>Run Your Code</p>
                     <p>In Any Time</p>
                 </div>
                 <h2 style={{ marginLeft: ".5vw" }}>ps: Not Only C Supported</h2>

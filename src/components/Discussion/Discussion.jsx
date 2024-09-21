@@ -5,7 +5,10 @@ function Discussion() {
     document.title = "Discussion | Mdr-C-Tutorial";
     return (
         <div className="Discussion">
-            <ReturnMainPage/>
+            <ReturnMainPage />
+            <div className="DiscussionContainer">
+                <h1>由于某些原因，延迟上线</h1>
+            </div>
         </div>
     )
 }

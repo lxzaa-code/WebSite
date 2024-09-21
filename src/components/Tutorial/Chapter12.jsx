@@ -4,7 +4,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { parseSentence } from "../mess/markdownparser";
 import Code from "./Code";
 
-function Chapter02() {
+function Chapter12() {
 
     let code01 = `#include <stdio.h>
 
@@ -16,7 +16,7 @@ int main(void) {
 
     let para01 = "本节中，我们将写一个可以输出 **hello world** 的小程序，并初试 `printf()` 函数 **输出字符串** 的用法！";
     let para02 = "C语言中有很多 **内置** 的 **函数**，他们在 **标准库** 中被定义。";
-    let para03 = "函数 `printf` 在标准库的 `stdio.h` 这个文件中被定义，通过预处理器指令 `#include` 引入这个文件（要引入的文件名通过尖括号包裹）。标准库里面的任何内容都需要引入对应的文件之后才能使用。";
+    let para03 = "函数 `printf` 在标准库的 `&lt;stdio.h&gt;` 这个文件中被定义，通过预处理器指令 `#include` 引入这个文件（要引入的文件名通过尖括号包裹）。标准库里面的任何内容都需要引入对应的文件之后才能使用。";
     let para04 = "`printf()` 函数可以只接收一个字符串，它会把这个字符串输出到屏幕上。请看下面的代码："
     let para05 = "如果运行这段代码，你会看到输出界面出现了一句 `Hello World!`，快试试吧！"
 
@@ -49,4 +49,4 @@ int main(void) {
     )
 }
 
-export default Chapter02;
+export default Chapter12;

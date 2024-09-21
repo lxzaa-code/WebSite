@@ -4,7 +4,8 @@ import ReturnMainPage from "../mess/ReturnMainPage";
 function TechStack() {
     return (
         <div className="TechStack">
-            <ReturnMainPage/>
+            <ReturnMainPage />
+            <h1>TechStacks</h1>
         </div>
     )
 }

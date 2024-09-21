@@ -1,15 +1,15 @@
 import './HelloWorld.css'
-import Chapter01 from "../Chapter01";
+import Chapter11 from "../Chapter11";
 import ReturnMainPage from "../../mess/ReturnMainPage";
 import { useParams } from "react-router-dom";
 import { GiPositionMarker } from "react-icons/gi";
 import { FaClock } from "react-icons/fa6";
-import Chapter02 from "../Chapter02";
-import Chapter03 from "../Chapter03";
-import Chapter04 from "../Chapter04";
-import Chapter05 from "../Chapter05";
+import Chapter12 from "../Chapter12";
+import Chapter13 from "../Chapter13";
+import Chapter14 from "../Chapter14";
+import Chapter15 from "../Chapter15";
 
-let arr = [<Chapter01 />, <Chapter02 />, <Chapter03 />, <Chapter04 />, <Chapter05 />];
+const arr = [<Chapter11 />, <Chapter12 />, <Chapter13 />, <Chapter14 />, <Chapter15 />];
 
 function ChapterLeft({ id }) {
     if (id === "0") {

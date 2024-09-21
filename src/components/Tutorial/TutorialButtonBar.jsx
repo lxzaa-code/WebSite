@@ -6,14 +6,14 @@ function TutorialButtonBar() {
         <div className="Tutorial-Button-Bar">
             <div id="Handout-Button"
                 onClick={() => {
-                    window.location.href = "https://mdr.aymao.com/C/#/"
+                    window.open("https://mdr.aymao.com/C/#/");
                 }}>
                 <FaArrowLeft />
                 Handout
             </div>
             <div id="Playground-Button"
                 onClick={() => {
-                    window.location.href = "https://godbolt.org/z/1b965v1hx"
+                    window.open("https://godbolt.org/z/1b965v1hx");
                 }}>
                 Playground
                 <FaArrowRight />

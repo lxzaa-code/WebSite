@@ -15,9 +15,14 @@ import Credits from "./components/Credits/Credits";
 import FeedBack from "./components/FeedBack/FeedBack";
 import About from "./components/About/About";
 import Handout from "./components/Handout/Handout";
-import Search from "./components/Nav/Search";
+import SearchPage from "./components/Search/SearchPage";
 import HelloWorld from "./components/Tutorial/HelloWorld/HelloWorld";
 import Numbers from "./components/Tutorial/Numbers/Numbers";
+import Statements from './components/Tutorial/Statements/Statements';
+import Functions from './components/Tutorial/Functions/Functions';
+import ArraysPointers from './components/Tutorial/ArraysPointers/ArraysPointers';
+import StructuresEnums from './components/Tutorial/StructuresEnums/StructuresEnums';
+import Concurrent from './components/Tutorial/Concurrent/Concurrent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -35,9 +40,14 @@ root.render(
                 <Route path="/feedback" element={<FeedBack />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/handout" element={<Handout />} />
-                <Route path="/search" element={<Search />} />
+                <Route path="/search" element={<SearchPage />} />
                 <Route path="/tutorial/01/:id" element={<HelloWorld />} />
                 <Route path="/tutorial/02/:id" element={<Numbers />} />
+                <Route path="/tutorial/03/:id" element={<Statements />} />
+                <Route path="/tutorial/04/:id" element={<Functions />} />
+                <Route path="/tutorial/05/:id" element={<ArraysPointers />} />
+                <Route path="/tutorial/06/:id" element={<StructuresEnums />} />
+                <Route path="/tutorial/07/:id" element={<Concurrent />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>

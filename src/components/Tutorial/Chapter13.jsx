@@ -6,7 +6,7 @@ import { parseSentence } from "../mess/markdownparser";
 import Code from "./Code";
 import { LineCode } from './Code';
 
-function Chapter03() {
+function Chapter13() {
     let code01 = `#include <stdio.h>
 
 int main(void) {
@@ -56,4 +56,4 @@ int main(void) {
     )
 }
 
-export default Chapter03;
+export default Chapter13;

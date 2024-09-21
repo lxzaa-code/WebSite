@@ -29,10 +29,15 @@ function Tutorial() {
             <div className="Tutorial-Main">
                 <div className="Tutorial-Main-Content">
                     <Link to="/tutorial/01/0">输出字符串</Link>
-                    <Link to="/tutorial/02/0">数字和运算</Link>
+                    <Link to="/tutorial/02/0">对象与运算</Link>
+                    <Link to="/tutorial/03/0">分支与循环</Link>
+                    <Link to="/tutorial/04/0">函数与递归</Link>
+                    <Link to="/tutorial/05/0">数组与指针</Link>
+                    <Link to="/tutorial/06/0">结构与枚举</Link>
+                    <Link to="/tutorial/07/0">并发与原子</Link>
                 </div>
                 <div className="Tutorial-Main-Article">
-                    <h1>输出字符串</h1>
+                    <h1 onClick={() => { window.location.href = "/tutorial/01/0" }}>输出字符串</h1>
                     <p dangerouslySetInnerHTML={{ __html: parseSentence(para01) }}></p>
                     <p>
                         <Link to="/tutorial/01/0">1. C语言的基本知识</Link>
@@ -46,7 +51,12 @@ function Tutorial() {
                         <Link to="/tutorial/01/2">3. 添加参数</Link>
                         <p className="Tutorial-Main-Article-Inline-Para" dangerouslySetInnerHTML={{ __html: parseSentence(para04) }}></p>
                     </p>
-                    <h1>数字和运算</h1>
+                    <h1 onClick={() => { window.location.href = "/tutorial/02/0" }}>对象与运算</h1>
+                    <h1 onClick={() => { window.location.href = "/tutorial/03/0" }}>分支与循环</h1>
+                    <h1 onClick={() => { window.location.href = "/tutorial/04/0" }}>函数与递归</h1>
+                    <h1 onClick={() => { window.location.href = "/tutorial/05/0" }}>数组与指针</h1>
+                    <h1 onClick={() => { window.location.href = "/tutorial/06/0" }}>结构与枚举</h1>
+                    <h1 onClick={() => { window.location.href = "/tutorial/07/0" }}>并发与原子</h1>
                 </div>
             </div>
         </div>
