@@ -13,6 +13,7 @@ export function scrollToAnchor(anchorName) {
 }
 
 function Tutorial() {
+    let para00 = "本页面为 **引导式教程**，查看讲义请点击上方 `Handout` 按钮。"
     let para01 = "**本章主要探讨** `**printf**` **函数的用法。**"
     let para02 = "：讲述历史，发展，语言标准等。"
     let para03 = "：讲解 `printf` 函数输出 **字符串** 的功能。"
@@ -37,6 +38,7 @@ function Tutorial() {
                     <Link to="/tutorial/07/0">并发与原子</Link>
                 </div>
                 <div className="Tutorial-Main-Article">
+                    <p dangerouslySetInnerHTML={{ __html: parseSentence(para00) }}></p>
                     <h1 onClick={() => { window.location.href = "/tutorial/01/0" }}>输出字符串</h1>
                     <p dangerouslySetInnerHTML={{ __html: parseSentence(para01) }}></p>
                     <p>
