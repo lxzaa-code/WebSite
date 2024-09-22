@@ -9,7 +9,7 @@ function PageLanguageButton() {
                 id="LanguageContainer"
                 onClick={
                     () => {
-                        if (document.getElementById("LanguageContainer").style.flexDirection === "row") {
+                        if (document.getElementById("LanguageContainer").style.flexDirection !== "row-reverse") {
                             document.getElementById("LanguageChinese").style.color = "#555";
                             document.getElementById("LanguageEnglish").style.color = "rebeccapurple";
                             document.getElementById("LanguageContainer").style.flexDirection = "row-reverse";
