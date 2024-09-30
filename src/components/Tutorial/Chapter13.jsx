@@ -2,7 +2,7 @@ import './Chapter.css';
 
 import { Link } from "react-router-dom";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import parseSentence from "../mess/markdownparser";
+import ParseSentence from "../mess/markdownparser";
 import Code from "./Code";
 import { LineCode } from './Code';
 
@@ -32,16 +32,16 @@ int main(void) {
 
     return (
         <div>
-            <p dangerouslySetInnerHTML={{ __html: parseSentence(para01) }}></p>
+            <ParseSentence str={para01} />
             <h2 id="hello-world-0301">为 printf 添加参数</h2>
             <Code code={{ str: code01 }}></Code>
-            <p dangerouslySetInnerHTML={{ __html: parseSentence(para02) }}></p>
-            <p dangerouslySetInnerHTML={{ __html: parseSentence(para03) }}></p>
+            <ParseSentence str={para02} />
+            <ParseSentence str={para03} />
             <h2 id="hello-world-0302">格式化字符的不同种类</h2>
-            <p dangerouslySetInnerHTML={{ __html: parseSentence(para04) }}></p>
-            <p dangerouslySetInnerHTML={{ __html: parseSentence(para05) }}></p>
+            <ParseSentence str={para04} />
+            <ParseSentence str={para05} />
             <LineCode code={{ str: code03 }}></LineCode>
-            <p dangerouslySetInnerHTML={{ __html: parseSentence(para06) }}></p>
+            <ParseSentence str={para06} />
             <Code code={{ str: code02 }}></Code>
 
             <div className="Chapter-Bottom">
