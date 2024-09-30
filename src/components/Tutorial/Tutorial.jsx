@@ -2,7 +2,7 @@ import './Tutorial.css'
 import ReturnMainPage from "../mess/ReturnMainPage";
 import TutorialButtonBar from "./TutorialButtonBar";
 import { Link } from "react-router-dom";
-import { parseSentence } from '../mess/markdownparser';
+import ParseSentence from '../mess/markdownparser';
 export function scrollToAnchor(anchorName) {
     if (anchorName) {
         // 找到锚点
@@ -38,20 +38,21 @@ function Tutorial() {
                     <Link to="/tutorial/07/0">并发与原子</Link>
                 </div>
                 <div className="Tutorial-Main-Article">
-                    <p dangerouslySetInnerHTML={{ __html: parseSentence(para00) }}></p>
+                    <ParseSentence str={para00} />
                     <h1 onClick={() => { window.location.href = "/tutorial/01/0" }}>输出字符串</h1>
-                    <p dangerouslySetInnerHTML={{ __html: parseSentence(para01) }}></p>
+
+                    <ParseSentence str={para01} />
                     <p>
                         <Link to="/tutorial/01/0">1. C语言的基本知识</Link>
-                        <p className="Tutorial-Main-Article-Inline-Para" dangerouslySetInnerHTML={{ __html: parseSentence(para02) }}></p>
+                        <ParseSentence inline={true} str={para02} />
                     </p>
                     <p>
                         <Link to="/tutorial/01/1">2. 输出字符串</Link>
-                        <p className="Tutorial-Main-Article-Inline-Para" dangerouslySetInnerHTML={{ __html: parseSentence(para03) }}></p>
+                        <ParseSentence inline={true} str={para03} />
                     </p>
                     <p>
                         <Link to="/tutorial/01/2">3. 添加参数</Link>
-                        <p className="Tutorial-Main-Article-Inline-Para" dangerouslySetInnerHTML={{ __html: parseSentence(para04) }}></p>
+                        <ParseSentence inline={true} str={para04} />
                     </p>
                     <h1 onClick={() => { window.location.href = "/tutorial/02/0" }}>对象与运算</h1>
                     <h1 onClick={() => { window.location.href = "/tutorial/03/0" }}>分支与循环</h1>

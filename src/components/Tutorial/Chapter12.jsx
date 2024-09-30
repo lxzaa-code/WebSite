@@ -1,7 +1,7 @@
 import './Chapter.css';
 import { Link } from "react-router-dom";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import { parseSentence } from "../mess/markdownparser";
+import ParseSentence from "../mess/markdownparser";
 import Code from "./Code";
 
 function Chapter12() {
@@ -25,18 +25,17 @@ int main(void) {
 
     return (
         <div>
-            <p dangerouslySetInnerHTML={{ __html: parseSentence(para01) }}></p>
+            <ParseSentence str={para01} />
 
             <h2 id="hello-world-0201">什么是字符串</h2>
-
-            <p dangerouslySetInnerHTML={{ __html: parseSentence(para11) }}></p>
-            <p dangerouslySetInnerHTML={{ __html: parseSentence(para12) }}></p>
+            <ParseSentence str={para11} />
+            <ParseSentence str={para12} />
             <h2 id="hello-world-0202">printf 输出字符串</h2>
-            <p dangerouslySetInnerHTML={{ __html: parseSentence(para02) }}></p>
-            <p dangerouslySetInnerHTML={{ __html: parseSentence(para03) }}></p>
-            <p dangerouslySetInnerHTML={{ __html: parseSentence(para04) }}></p>
+            <ParseSentence str={para02} />
+            <ParseSentence str={para03} />
+            <ParseSentence str={para04} />
             <Code code={{ str: code01 }} />
-            <p dangerouslySetInnerHTML={{ __html: parseSentence(para05) }}></p>
+            <ParseSentence str={para05} />
             <div className="Chapter-Bottom">
                 <div className="Chapter-Bottom-Left">
                     <Link to="/tutorial/01/0"><FaArrowLeft />上一页</Link>

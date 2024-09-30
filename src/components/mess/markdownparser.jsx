@@ -1,4 +1,4 @@
-export function parseSentence(str) {
+function ParseSentence({ str, inline = false }) {
     let currentStr = str;
     let newStr = null;
     let afterStr = null;
@@ -44,5 +44,11 @@ export function parseSentence(str) {
         }
     } while (afterStr !== currentStr);
 
-    return newStr;
+    if (inline) {
+        return (<p style={{ display: 'inline' }} dangerouslySetInnerHTML={{ __html: newStr }}></p>);
+    }
+
+    return (<p dangerouslySetInnerHTML={{ __html: newStr }}></p>);
 }
+
+export default ParseSentence;

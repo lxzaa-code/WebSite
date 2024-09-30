@@ -1,16 +1,16 @@
 import './Chapter.css';
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
-import { parseSentence } from "../mess/markdownparser";
+import ParseSentence from '../mess/markdownparser';
 
 function Chapter11() {
     let para01 = "本节中，我们将初步认识 **C 语言**，了解它的 **历史** 和 **发展**。";
     let para02 = "C 语言于 1972 年由 **贝尔实验室** 的 *Dennie Ritch* 和 *Ken Thompson* 在开发 **UNIX** 操作系统时研制。";
     return (
         <div>
-            <p dangerouslySetInnerHTML={{ __html: parseSentence(para01) }}></p>
+            <ParseSentence str={para01} />
             <h2 id="hello-world-01">历史</h2>
-            <p dangerouslySetInnerHTML={{ __html: parseSentence(para02) }}></p>
+            <ParseSentence str={para02} />
             <h2 id="hello-world-02">语言标准</h2>
             <div className="Chapter-Bottom">
                 <div className="Chapter-Bottom-Left">

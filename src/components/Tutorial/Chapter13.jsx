@@ -2,7 +2,7 @@ import './Chapter.css';
 
 import { Link } from "react-router-dom";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import { parseSentence } from "../mess/markdownparser";
+import parseSentence from "../mess/markdownparser";
 import Code from "./Code";
 import { LineCode } from './Code';
 

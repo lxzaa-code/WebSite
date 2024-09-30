@@ -88,7 +88,7 @@
     font-size: 1.2vw;
 }
 
-.Tutorial-Main .Tutorial-Main-Article p.Tutorial-Main-Article-Inline-Para {
+.Tutorial-Main .Tutorial-Main-Article .Tutorial-Main-Article-Inline-Para {
     display: inline;
 }
 
