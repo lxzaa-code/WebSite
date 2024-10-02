@@ -6,7 +6,7 @@ function TutorialButtonBar() {
         <div className="Tutorial-Button-Bar">
             <div id="Handout-Button"
                 onClick={() => {
-                    window.open("https://mdr.aymao.com/C/#/");
+                    window.open("http://localhost:5173/");
                 }}>
                 <FaArrowLeft />
                 Handout

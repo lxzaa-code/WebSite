@@ -15,6 +15,7 @@ function ChapterLeft({ id }) {
     if (id === "0") {
         return (
             <div className="Chapter-Left">
+                <h3>本页内容</h3>
                 <p onClick={() => {
                     const section2 = document.querySelector("#hello-world-01");
                     section2.scrollIntoView({ behavior: "smooth" });
@@ -29,6 +30,7 @@ function ChapterLeft({ id }) {
     if (id === "1") {
         return (
             <div className="Chapter-Left">
+                <h3>本页内容</h3>
                 <p onClick={() => {
                     const section2 = document.querySelector("#hello-world-0201");
                     section2.scrollIntoView({ behavior: "smooth" });
@@ -43,6 +45,7 @@ function ChapterLeft({ id }) {
     if (id === "2") {
         return (
             <div className="Chapter-Left">
+                <h3>本页内容</h3>
                 <p onClick={() => {
                     const section2 = document.querySelector("#hello-world-0301");
                     section2.scrollIntoView({ behavior: "smooth" });

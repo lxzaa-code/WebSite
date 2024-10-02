@@ -13,14 +13,14 @@
     align-items: center;
     padding: 1vw 2vw;
     border-radius: 1.75vw;
-    transition: all 0.2s;
+    transition: all 0.4s;
 }
 
 .Button-Bar #Start-Button {
     background: rebeccapurple;
     color: white;
     height: 1.5vw;
-    font-size: 1.9vw;
+    font-size: 1.8vw;
     font-family: "Poppins", serif;
     font-weight: 300;
 }
@@ -33,7 +33,7 @@
     color: rebeccapurple;
     border: 1px solid rebeccapurple;
     height: 1.5vw;
-    font-size: 1.7vw;
+    font-size: 1.65vw;
     font-family: "Poppins", serif;
     font-weight: 300;
     gap: 0.5vw;

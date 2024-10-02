@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 16vw;
-    border-left: 1px solid #999;
+    border-left: 1px solid #bbb;
     padding-left: 2vw;
     width: 76vw;
 }
@@ -64,23 +64,36 @@
 .Chapter p {
     font-size: 1.2vw;
     margin: .8vw 0;
+    align-items: center;
 }
 
 .Chapter p>span {
+    display: inline-block;
     font-family: 'JetBrains Mono', monospace !important;
-    background-color: #eee;
-    color: #444;
-    padding-left: .3vw;
-    padding-right: .3vw;
-    border-radius: .4vw;
+    background-color: #f0f0f0;
+    color: rgb(88, 0, 175);
+    font-size: 1vw;
+    padding: .05vw .4vw;
+    margin-bottom: 0.1vw;
+    border-radius: .6vw;
 }
 
 .Chapter .Chapter-Left>p {
-    color: rebeccapurple;
+    color: #666;
+    transition: .5s;
+    font-size: 1.1vw;
+    cursor: pointer;
 }
 
 .Chapter .Chapter-Left>p:hover {
-    color: #a950ff;
+    color: rebeccapurple;
+}
+
+.Chapter .Chapter-Left>h3 {
+    margin-top: 1.5vw;
+    color: rebeccapurple;
+    margin-bottom: 1vw;
+    font-size: 1.2vw;
 }
 
 .Chapter h2 {

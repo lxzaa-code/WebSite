@@ -16,3 +16,7 @@ code {
 p {
   font-size: 1vw;
 }
+
+hr {
+  color: #bbb !important;
+}
