@@ -23,12 +23,14 @@
 }
 
 .Tutorial .Tutorial-Title h1>span {
-    font-size: 4vw;
     margin-right: 2vw;
-    color: rebeccapurple;
+    font-size: 3.5vw;
+    color: #555;
 }
 
 .Tutorial .Tutorial-Title h1>span>span {
+    font-size: 4vw;
+    color: rebeccapurple;
     font-weight: 600;
 }
 
@@ -65,7 +67,7 @@
     margin-right: 5vw;
     border-radius: 1.5vw;
     transition: all .5s;
-    color: #555;
+    color: #333;
 }
 
 .Tutorial-Main .Tutorial-Main-Content a:hover {
@@ -81,14 +83,16 @@
 }
 
 .Tutorial-Main .Tutorial-Main-Article h1 {
-    color: rebeccapurple;
+    display: inline-block;
+    width: 15vw;
+    color: black;
     margin-bottom: 0.4vw;
     margin-top: 0.8vw;
     transition: all 0.3s;
 }
 
 .Tutorial-Main .Tutorial-Main-Article h1:hover {
-    color: rgba(102, 51, 153, 0.829);
+    color: #431b6a;
 }
 
 .Tutorial-Main .Tutorial-Main-Article p {
@@ -115,5 +119,5 @@
 }
 
 .Tutorial-Main .Tutorial-Main-Article p>a:hover {
-    color: #663399bb;
+    color: #431b6a;
 }
