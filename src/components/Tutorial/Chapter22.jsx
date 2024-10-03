@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 function Chapter22() {
+    window.scrollTo(0, 0);
     return (
         <div>
             <div className="Chapter-Bottom">

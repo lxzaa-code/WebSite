@@ -7,6 +7,7 @@ import Code from "./Code";
 import { LineCode } from './Code';
 
 function Chapter13() {
+    window.scrollTo(0, 0);
     let code01 = `#include <stdio.h>
 
 int main(void) {

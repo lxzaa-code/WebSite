@@ -5,7 +5,7 @@ import ParseSentence from "../mess/markdownparser";
 import Code from "./Code";
 
 function Chapter12() {
-
+    window.scrollTo(0, 0);
     let code01 = `#include <stdio.h>
 
 int main(void) {
