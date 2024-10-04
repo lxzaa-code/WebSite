@@ -1,9 +1,9 @@
 import './Credits.css';
 import ReturnMainPage from '../mess/ReturnMainPage';
-import { Link } from 'react-router-dom';
 import { FaGithub } from "react-icons/fa";
 import { FaWifi } from 'react-icons/fa6';
 import { IoLogoJavascript } from 'react-icons/io';
+import CreditsItem from './CreditsItem';
 
 function Credits() {
     document.title = "Credits | Mdr-C-Tutorial";
@@ -13,109 +13,22 @@ function Credits() {
             <h1>Credits</h1>
             <h2>Contributors</h2>
             <div className="Credits-Wrapper">
-                <div className="Credits-Item Big Credits-Mdr">
-                    <span>mdr</span>
-                    <div className="Credits-Item-Links">
-                        <Link rel="noreferrer" target={"_blank"} to="https://github.com/Minsecrus"><FaGithub /></Link>
-                    </div>
-                </div>
-                <div className="Credits-Item">
-                    <span>@幻</span>
-                    <div className="Credits-Item-Links">
-                        <Link rel="noreferrer" target={"_blank"} to="https://github.com/huan201"><FaGithub /></Link>
-                    </div>
-                </div>
-                <div className="Credits-Item Big Credits-LYX">
-                    <span>LY-Xiang</span>
-                    <div className="Credits-Item-Links">
-                        <Link rel="noreferrer" target={"_blank"} to="https://github.com/LY-Xiang"><FaGithub /></Link>
-                    </div>
-                </div>
-                <div className="Credits-Item">
-                    <span>JuaJuanchi</span><div className="Credits-Item-Links">
-                        <Link rel="noreferrer" target={"_blank"} to="https://github.com/Jua-Juanchi"><FaGithub /></Link>
-                    </div>
-                </div>
-                <div className="Credits-Item">
-                    <span>No</span>
-                    <div className="Credits-Item-Links">
-                        <Link rel="noreferrer" target={"_blank"} to="https://github.com/Kroner"><FaGithub /></Link>
-                        <Link rel="noreferrer" target={"_blank"} to="https://www.cnblogs.com/Kroner"><FaWifi /></Link>
-                    </div>
-                </div>
-                <div className="Credits-Item">
-                    <span>xly</span>
-                    <div className="Credits-Item-Links">
-                        <Link rel="noreferrer" target={"_blank"} to="https://github.com/LY-Xiang"><FaGithub /></Link>
-                    </div>
-                </div>
-                <div className="Credits-Item">
-                    <span>革匊习习中</span>
-                    <div className="Credits-Item-Links">
-                        <Link rel="noreferrer" target={"_blank"} to="https://github.com/Juvwxyz"><FaGithub /></Link>
-                    </div>
-                </div>
-                <div className="Credits-Item">
-                    <span>初心不变-叶子</span>
-                    <div className="Credits-Item-Links">
-                        <Link rel="noreferrer" target={"_blank"} to="https://github.com/FHU-yezi"><FaGithub /></Link>
-                        <Link rel="noreferrer" target={"_blank"} to="https://www.jianshu.com/u/ea36c8d8aa30"><IoLogoJavascript /></Link>
-                    </div>
-                </div>
-                <div className="Credits-Item">
-                    <span>0x7E7</span>
-                    <div className="Credits-Item-Links">
-                        <Link rel="noreferrer" target={"_blank"} to="https://github.com/20080217"><FaGithub /></Link>
-                    </div>
-                </div>
-                <div className="Credits-Item">
-                    <span>菲露露</span>
-                    <div className="Credits-Item-Links">
-                        <Link rel="noreferrer" target={"_blank"} to="https://github.com/LovelyLavender4"><FaGithub /></Link>
-                    </div>
-                </div>
-                <div className="Credits-Item">
-                    <span>Telecomadm</span>
-                    <div className="Credits-Item-Links">
-                        <Link rel="noreferrer" target={"_blank"} to="https://github.com/telecomadm1145"><FaGithub /></Link>
-                    </div>
-                </div>
-                <div className="Credits-Item Big Credits-WT">
-                    <span>WHITE TREE</span>
-                    <div className="Credits-Item-Links">
-                        <Link rel="noreferrer" target={"_blank"} to="https://github.com/VinbeWan"><FaGithub /></Link>
-                    </div>
-                </div>
-                <div className="Credits-Item Big Credits-XIAOYI">
-                    <span>XIAOYI12</span>
-                    <div className="Credits-Item-Links">
-                        <Link rel="noreferrer" target={"_blank"} to="https://github.com/xiaoyi1212"><FaGithub /></Link>
-                    </div>
-                </div>
-                <div className="Credits-Item">
-                    <span>Min0911Y</span>
-                    <div className="Credits-Item-Links">
-                        <Link rel="noreferrer" target={"_blank"} to="https://github.com/min0911Y"><FaGithub /></Link>
-                    </div>
-                </div>
-                <div className="Credits-Item">
-                    <span>A4-Tacks</span>
-                    <div className="Credits-Item-Links">
-                        <Link rel="noreferrer" target={"_blank"} to="https://github.com/A4-Tacks"><FaGithub /></Link>
-                    </div>
-                </div>
-                <div className="Credits-Item">
-                    <span>ChatRBQ</span>
-                    <div className="Credits-Item-Links">
-                        <Link rel="noreferrer" target={"_blank"} to="https://github.com/fawdlstty"><FaGithub /></Link>
-                    </div>
-                </div>
-                <div className="Credits-Item">
-                    <span>Kill</span>
-                    <div className="Credits-Item-Links">
-                        <Link rel="noreferrer" target={"_blank"} to="https://github.com/Killcerr"><FaGithub /></Link>
-                    </div>
-                </div>
+                <CreditsItem name="mdr" links={[{ logo: <FaGithub />, to: "https://github.com/Minsecrus" }]} big="Mdr" />
+                <CreditsItem name="@幻" links={[{ logo: <FaGithub />, to: "https://github.com/huan201" }]} />
+                <CreditsItem name="LY-Xiang" links={[{ logo: <FaGithub />, to: "https://github.com/LY-Xiang" }]} big="LYX" />
+                <CreditsItem name="JuaJuanchi" links={[{ logo: <FaGithub />, to: "https://github.com/Jua-Juanchi" }]} />
+                <CreditsItem name="No" links={[{ logo: <FaGithub />, to: "https://github.com/Kroner" }, { logo: <FaWifi />, to: "https://www.cnblogs.com/Kroner" }]} />
+                <CreditsItem name="革匊习习中" links={[{ logo: <FaGithub />, to: "https://github.com/Juvwxyz" }]} />
+                <CreditsItem name="初心不变-叶子" links={[{ logo: <FaGithub />, to: "https://github.com/FHU-yezi" }, { logo: <IoLogoJavascript />, to: "https://www.jianshu.com/u/ea36c8d8aa30" }]} />
+                <CreditsItem name="0x7E7" links={[{ logo: <FaGithub />, to: "https://github.com/20080217" }]} />
+                <CreditsItem name="菲露露" links={[{ logo: <FaGithub />, to: "https://github.com/LovelyLavender4" }]} />
+                <CreditsItem name="Telecomadm" links={[{ logo: <FaGithub />, to: "https://github.com/telecomadm1145" }]} />
+                <CreditsItem name="WHITE TREE" links={[{ logo: <FaGithub />, to: "https://github.com/VinbeWan" }]} big="WT" />
+                <CreditsItem name="XIAOYI12" links={[{ logo: <FaGithub />, to: "https://github.com/xiaoyi1212" }]} big="XIAOYI" />
+                <CreditsItem name="Min0911Y" links={[{ logo: <FaGithub />, to: "https://github.com/min0911Y" }]} />
+                <CreditsItem name="A4-Tacks" links={[{ logo: <FaGithub />, to: "https://github.com/A4-Tacks" }]} />
+                <CreditsItem name="ChatRBQ" links={[{ logo: <FaGithub />, to: "https://github.com/fawdlstty" }]} />
+                <CreditsItem name="Kill" links={[{ logo: <FaGithub />, to: "https://github.com/Killcerr" }]} />
             </div>
             <h2>Organizations</h2>
             <div className="Credits-Wrapper">
@@ -123,30 +36,10 @@ function Credits() {
             </div>
             <h2>Special</h2>
             <div className="Credits-Wrapper">
-                <div className="Credits-Item">
-                    <span>FrankHB</span>
-                    <div className="Credits-Item-Links">
-                        <Link rel="noreferrer" target={"_blank"} to="https://github.com/FrankHB"><FaGithub /></Link>
-                    </div>
-                </div>
-                <div className="Credits-Item">
-                    <span>Jajuju</span>
-                    <div className="Credits-Item-Links">
-                        <Link rel="noreferrer" target={"_blank"} to="https://github.com/frederick-vs-ja"><FaGithub /></Link>
-                    </div>
-                </div>
-                <div className="Credits-Item">
-                    <span>Fresky</span>
-                    <div className="Credits-Item-Links">
-                        <Link rel="noreferrer" target={"_blank"} to="https://github.com/Freskyz"><FaGithub /></Link>
-                    </div>
-                </div>
-                <div className="Credits-Item">
-                    <span>兔兔</span>
-                    <div className="Credits-Item-Links">
-                        <Link rel="noreferrer" target={"_blank"} to="https://github.com/RGSS3"><FaGithub /></Link>
-                    </div>
-                </div>
+                <CreditsItem name="FrankHB" links={[{ logo: <FaGithub />, to: "https://github.com/FrankHB" }]} />
+                <CreditsItem name="Jajuju" links={[{ logo: <FaGithub />, to: "https://github.com/frederick-vs-ja" }]} />
+                <CreditsItem name="Fresky" links={[{ logo: <FaGithub />, to: "https://github.com/Freskyz" }]} />
+                <CreditsItem name="兔兔" links={[{ logo: <FaGithub />, to: "https://github.com/RGSS3" }]} />
             </div>
 
         </div>
