@@ -8,39 +8,119 @@
     margin-top: 2vw;
     margin-bottom: 1vw;
     font-family: 'Poppins', sans-serif;
-    font-size: 3vw;
+    font-size: 3.5vw;
+    font-weight: 400;
+    color: rebeccapurple;
+}
+
+.Credits h2 {
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5vw;
     font-weight: 300;
     color: rebeccapurple;
 }
 
-.Credits .Credits-Item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1.5vw;
-    margin-left: 1vw;
-    margin-top: 0.5vw;
-    font-size: 1.8vw;
+.Credits .Credits-Wrapper {
+    display: grid;
+    grid-template-columns: repeat(7, 12vw);
+    grid-auto-rows: 10vw;
+    grid-gap: 1.3vw;
 }
 
-.Credits .Credits-Item p {
+.Credits .Credits-Wrapper .Credits-Item {
+    border: 1px solid rgba(102, 51, 153, 0.373);
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#66339906, #66339903);
+    transition: all 1s;
+}
+
+.Credits .Credits-Wrapper .Credits-Item:hover {
+    border: 1px solid #663399;
+    background-image: linear-gradient(#66339906, #66339909);
+    box-shadow: #66339933 5px 10px 15px;
+}
+
+.Credits .Credits-Wrapper .Credits-Item.Big {
+    border-radius: 2vw;
+
+}
+
+.Credits .Credits-Wrapper .Credits-Item span {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.5vw;
-    display: flex;
+    font-size: 1.6vw;
+    color: #333;
+    display: inline;
     flex-direction: row;
+    padding-top: 1.5vw;
     align-items: center;
-    gap: 0.7vw;
-    width: 15vw;
+    transition: .5s;
 }
 
-.Credits .Credits-Item a {
+.Credits .Credits-Wrapper .Credits-Item.Big span {
+    font-size: 2.6vw;
+    padding-top: 2.5vw;
+}
+
+.Credits .Credits-Wrapper .Credits-Item:hover span {
+    padding-top: 0;
+    color: black;
+}
+
+.Credits .Credits-Wrapper .Credits-Item a {
     display: flex;
     flex-direction: row;
     align-items: center;
     color: rebeccapurple;
-    transition: all .3s;
+    font-size: 1.5vw;
+    height: 1.7vw;
+    transition: all .4s;
 }
 
-.Credits .Credits-Item a:hover {
+.Credits .Credits-Wrapper .Credits-Item.Big a {
+    font-size: 2.5vw;
+    height: 3vw;
+}
+
+.Credits .Credits-Wrapper .Credits-Item a:hover {
     color: black;
+}
+
+.Credits .Credits-Wrapper .Credits-Item .Credits-Item-Links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1vw;
+    width: 0;
+    transition: all 1s ease-in-out;
+    overflow: hidden;
+}
+
+.Credits .Credits-Wrapper .Credits-Item:hover .Credits-Item-Links {
+    width: 100%;
+}
+
+.Credits-Mdr {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.Credits-LYX {
+    grid-column: 4/6;
+    grid-row: 1/3;
+}
+
+.Credits-XIAOYI {
+    grid-column: 6/8;
+    grid-row: 2/4;
+}
+
+.Credits-WT {
+    grid-column: 2/4;
+    grid-row: 3/5;
 }

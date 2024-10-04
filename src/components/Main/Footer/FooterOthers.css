@@ -1,6 +1,6 @@
 .FooterOthers {
     display: flex;
-    margin-left: 15vw;
+    margin-left: 10vw;
     margin-right: 15vw;
     flex-direction: column;
 }
