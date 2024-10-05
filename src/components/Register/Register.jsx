@@ -1,26 +1,29 @@
 import React, { useEffect, useState } from "react";
-import "./Login.css";
+import "./Register.css";
 import ReturnMainPage from "../mess/ReturnMainPage";
 
-const Login = () => {
+const Register = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
 
     useEffect(() => {
-        document.title = "Login | Mdr-C-Tutorial";
+        document.title = "Register | Mdr-C-Tutorial";
     }, []);
 
-    const go = (e) => {
+    //逻辑
+    const handleSubmit = (e) => {
         e.preventDefault();
+        // 处理注册逻辑
+        console.log("O.O:", { username, password });
     };
 
     return (
-        <div className="Login">
+        <div className="Register">
             <ReturnMainPage />
-            <div className="Login_C">
-                <div className="Login_main">
-                    <h1>登录</h1>
-                    <form onSubmit={go}>
+            <div className="Register_C">
+                <div className="Register_main">
+                    <h1>注册</h1>
+                    <form onSubmit={handleSubmit}>
                         <label>
                             账号：
                             <input 
@@ -42,8 +45,8 @@ const Login = () => {
                         </label>
                         <br />
                         <button type="submit">登录</button>
-                        <a href="/register">
-                        <h3>没有账号？前去注册</h3>
+                        <a href="/login">
+                        <h3>已有账号？前去登录</h3>
                         </a>
                     </form>
                 </div>
@@ -52,4 +55,4 @@ const Login = () => {
     );
 }
 
-export default Login;
+export default Register;
