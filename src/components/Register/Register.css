@@ -1,13 +1,17 @@
-.Login {
+.Register {
     margin: 1vw 3vw;
     display: flex;
     flex-direction: column;
 }
 
-.Login_main {
+.Register_main {
     width: 340px;
-    padding: 20px;
+    height: auto;
+    padding: 20px; 
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(1px);
+    background: rgba(172, 169, 169, 0.4);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,13 +19,14 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.Login_C {
+.Register_C {
     display: flex;  
     justify-content: center;  
     align-items: center;
+    background-size: cover;
 }
 
-.Login_main h1 {
+.Register_main h1 {
     margin-top: 0.5vw;
     font-family: 'Poppins', sans-serif;
     font-size: 2vw;
@@ -30,14 +35,14 @@
     text-align: center; 
 }
 
-.Login_main label {
-    color: #000000; 
+.Register_main label {
+    color: rebeccapurple; 
     font-size: 1.5vw;
     margin: 10px 0; 
-    display: block;
+    display: block; 
 }
 
-.Login_main input {
+.Register_main input {
     width: 100%; 
     padding: 8px; 
     margin-top: 5px; 
@@ -45,18 +50,18 @@
     border-radius: 4px; 
 }
 
-.Login_main button {
+.Register_main button {
     margin-top: 15px; 
     padding: 10px 15px; 
     border: none; 
-    border-radius: 4px; 
+    border-radius: 4px;
     background-color: rebeccapurple; 
     color: white; 
     cursor: pointer; 
 }
 
-.Login_main button:hover {
-    background-color: rgb(90, 104, 185); 
+.Register_main button:hover {
+    background-color: darkviolet; /* 悬停时的背景色 */
 }
 a {
     text-decoration: none;
